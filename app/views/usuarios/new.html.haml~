@@ -1,0 +1,23 @@
+%h1 Registro
+
+= form_tag usuario_path do
+
+  = label :usuario, :nombre, 'Nombre'
+  = text_field :usuario, 'nombre'
+  
+  = label :usuario, :email, 'Email'
+  = text_field :usuario, 'email'
+  
+  = label :usuario, :rol, 'Rol'
+  = text_field :usuario, 'rol'
+  
+  = label :usuario, :nick, 'Nick'
+  = text_field :usuario, 'nick'
+
+  = label :usuario, :key, 'Key'
+  = password_field :usuario, 'key'
+  
+  = submit_tag 'Registro'
+    
+= form_tag homepage_index_path, :method => :get do
+  = submit_tag 'Cancelar'

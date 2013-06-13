@@ -11,6 +11,6 @@ class CreateUsuarios < ActiveRecord::Migration
   end
 
   def down
-    drop_table 'calendars'
+    drop_table 'usuarios'
   end
 end
