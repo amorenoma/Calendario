@@ -1,0 +1,17 @@
+--para descargar de la carpeta de ALEX(1ª vez):
+
+crear una carpeta
+dentro de ella:
+git init
+git remote add origin https://github.com/amorenoma/Calendario.git
+git remote -v
+git pull origin master
+
+--para descargar de la carpeta de ALEX(veces sucesivas):
+git pull origin master
+
+--para subir archivos modificados a las carpeta de ALEX:
+git commit
+git add (carpetas que diga que hemos modificado)
+git commit -m "comentario sobre lo que he modificado"
+git push origin master
