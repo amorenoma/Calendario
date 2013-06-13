@@ -1,0 +1,20 @@
+-#  This file is app/views/movies/index.html.haml
+%h2 JUNIO
+
+%table#calendars
+  %thead
+    %tr
+      %th Fecha
+      %th Asignatura
+      %th Tipo prueba
+      %th Aula
+      %th Dificultad
+  %tbody
+    - @calendars.each do |calendar|
+      %tr
+        %td= calendar.fecha
+        %td= calendar.asignatura
+        %td= calendar.tipo
+        %td= calendar.aula
+        %td= calendar.dificultad
+        %td= link_to "ver evento", calendar_path(calendar)
