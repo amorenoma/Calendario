@@ -63,6 +63,9 @@ Calendario::Application.routes.draw do
   match '/new' => 'usuarios#new'
   match '/login' => 'usuarios#login'
   post '/usuarios/acceder'
-  #resources :meses
+
+
+  match '/logout' => 'usuarios#logout'
+  resources :meses
   
 end

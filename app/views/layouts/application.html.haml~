@@ -7,9 +7,10 @@
     = csrf_meta_tags
 
   %body
-    #main
-      - if flash[:notice]
-        #notice.message= flash[:notice]
-      - elsif flash[:warning]
-        #warning.message= flash[:warning]
-      = yield
+    - if flash[:notice]
+      #notice.message= flash[:notice]
+    - elsif flash[:warning]
+      #warning.message= flash[:warning]
+    - if session[:usuario]
+      = link_to "#{session[:usuario].nombre}"
+    = yield

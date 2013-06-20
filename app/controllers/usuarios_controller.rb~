@@ -2,6 +2,7 @@ class UsuariosController < ApplicationController
   def new
   end
   def show
+    session.clear
   end
 
   def create
@@ -22,12 +23,16 @@ class UsuariosController < ApplicationController
         flash[:notice] = "#{session[:nick]} ha accedido correctamente"
         redirect_to homepage_index_path
       else
-        flash[:notice] = "clave invalida"
+        flash[:warning] = "clave invalida"
         redirect_to login_path
       end
      else
        flash[:warning]="usuario inexistente"
        redirect_to login_path
      end
+  end
+  def logout
+    session.delete
+    redirect_to homepage_index_path
   end
 end

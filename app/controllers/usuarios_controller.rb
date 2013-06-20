@@ -30,4 +30,8 @@ class UsuariosController < ApplicationController
        redirect_to login_path
      end
   end
+  def logout
+    session.clear
+    redirect_to homepage_index_path
+  end
 end
