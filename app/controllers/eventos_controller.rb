@@ -1,14 +1,18 @@
 class EventosController < ApplicationController
 
   def create
-  	@evento = Evento.create(params[:evento])
+  	@evento = Evento.create!(params[:evento])
   	flash[:notice] = "El evento ha sido creado con exito"
   	redirect_to homepage_index_path
   end
 
+  def edit
+  	@evento = Evento.find params[:id]
+  end
+
   def update
   	@evento = Evento.find params[:id]
-  	@movie.update_attributes!(params[:evento])
+  	@evento.update_attributes!(params[:evento])
   	flash[:notice] = "El evento ha sido actualizado con exito"
   	redirect_to evento_path(@evento)
   end
@@ -22,4 +26,12 @@ class EventosController < ApplicationController
     	end
     end
   end
+
+  def destroy
+  	@evento = Evento.find(params[:id])
+  	@evento.destroy
+  	flash[:notice]= "Evento borrado"
+  	redirect_to homepage_index_path
+  end
+
 end
