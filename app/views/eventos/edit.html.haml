@@ -1,0 +1,15 @@
+= form_tag evento_path(@evento), :method => :put do
+	= label :evento, :fecha, "Fecha"
+	= text_field :evento, "fecha"
+
+	= label :evento, :asignatura, "Asignatura"
+	= text_field :evento, "asignatura"
+
+	= label :evento, :tipo, "Tipo"
+	= text_field :tipo, "tipo"
+
+	= label :evento, :aula, "Aula"
+	= text_field :aula, "aula"
+
+	= label :evento, :dificultad, "Dificultad"
+	= text_field :dificultad, "dificultad"

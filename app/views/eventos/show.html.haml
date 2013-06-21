@@ -16,5 +16,6 @@
 		%th= @evento.dificultad
 
 %td= link_to "Atras", mes_path(@mes)
--if session[:usuario].rol=="Profesor"
-	=link_to 'Modificar', '/logout'
+-if session[:usuario]
+	-if session[:usuario].rol=="Profesor"
+		=link_to 'Modificar', edit_evento_path(@evento)
