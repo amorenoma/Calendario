@@ -36,7 +36,7 @@ class EventosController < ApplicationController
   	@evento = Evento.find(params[:id])
   	@evento.destroy
   	flash[:notice]= "Evento borrado"
-  	redirect_to homepage_index_path
+  	redirect_to eventos_path
   end
 
 end
