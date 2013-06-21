@@ -3,10 +3,12 @@
 
 
 -@dias.each_with_index do |dia, index|
-  %h1=index+1
-  -if dia!=""
-    %td=dia.asignatura
-    %td=dia.tipo
-    %td=dia.fecha.hour
-    -#.wday domingo=0
+  %num.container
+    %h1.num= index+1
+    -if dia!=""
+      %td=dia.asignatura
+      %td=dia.tipo
+      -#.wday domingo=0
+      %td= link_to "Ver evento", evento_path(dia)
 
+%p= link_to "Atras", homepage_index_path
