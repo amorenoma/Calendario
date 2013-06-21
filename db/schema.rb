@@ -25,7 +25,8 @@ ActiveRecord::Schema.define(:version => 20130607145519) do
 
   create_table "meses", :force => true do |t|
     t.string   "mes"
-    t.string   "dias"
+    t.integer  "dias"
+    t.string   "nmes"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

@@ -2,16 +2,20 @@ class MesesController < ApplicationController
   def show
     @mes = Mes.find(params[:id])
     eventos = Evento.all
-    #aux=0
+    datos= Array.new
     eventos.each do |evento|
-      puts '!!!!!!!!!!!!!!!!!!!!!!!!!!'
-      puts evento.fecha.to_s.split("-")[1]
-      #if evento.fecha.to_s.split("-")[1]=~@mes.mes
-        #puts '================'
-        #puts evento.fecha
-        #datos[aux]=evento
-        #aux=aux+1
-      #end
+      if evento.fecha.month.to_s==@mes.nmes
+        datos.push(evento)
+      end
     end
+    dias= Array.new(@mes.dias) {""} 
+    for i in 1..@mes.dias
+      datos.each do |dato|
+        if dato.fecha.day==i
+          dias[i-1]=dato
+        end
+      end
+    end
+    @dias=dias
   end
 end

@@ -1,12 +1,12 @@
 class CreateMeses < ActiveRecord::Migration
   def up
-   create_table 'mes' do |t|
+   create_table 'meses' do |t|
       t.string 'mes' 
-      t.string 'dias'
+      t.integer 'dias'
       t.timestamps 
    end
   end
   def down
-    drop_table 'mes'
+    drop_table 'meses'
   end
 end

@@ -14,16 +14,16 @@ eventos = [
 ]  
 
 meses = [
-  {:mes => 'Septiembre', :dias=> '30'},
-  {:mes => 'Octubre', :dias=> '31'},
-  {:mes => 'Noviembre', :dias=> '30'},
-  {:mes => 'Diciembre', :dias=> '31'},
-  {:mes => 'Enero', :dias=> '31'},
-  {:mes => 'Febrero', :dias=> '28'},
-  {:mes => 'Marzo', :dias=> '31'},
-  {:mes => 'Abril', :dias=> '30'},
-  {:mes => 'Mayo', :dias=> '31'},
-  {:mes => 'Junio', :dias=> '30'}
+  {:mes => 'Septiembre', :dias=> '30',:nmes=> '9'},
+  {:mes => 'Octubre', :dias=> '31',:nmes=> '10'},
+  {:mes => 'Noviembre', :dias=> '30',:nmes=> '11'},
+  {:mes => 'Diciembre', :dias=> '31',:nmes=> '12'},
+  {:mes => 'Enero', :dias=> '31',:nmes=> '1'},
+  {:mes => 'Febrero', :dias=> '28',:nmes=> '2'},
+  {:mes => 'Marzo', :dias=> '31',:nmes=> '3'},
+  {:mes => 'Abril', :dias=> '30',:nmes=> '4'},
+  {:mes => 'Mayo', :dias=> '31',:nmes=> '5'},
+  {:mes => 'Junio', :dias=> '30',:nmes=> '6'}
 ]
 
 usuarios = [
