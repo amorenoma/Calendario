@@ -6,9 +6,13 @@ class EventosController < ApplicationController
   	redirect_to homepage_index_path
   end
 
+  def edit
+  	@evento = Evento.find params[:id]
+  end
+
   def update
   	@evento = Evento.find params[:id]
-  	@movie.update_attributes!(params[:evento])
+  	@evento.update_attributes!(params[:evento])
   	flash[:notice] = "El evento ha sido actualizado con exito"
   	redirect_to evento_path(@evento)
   end
