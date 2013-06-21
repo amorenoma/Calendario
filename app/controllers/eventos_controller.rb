@@ -8,7 +8,7 @@ class EventosController < ApplicationController
   def create
   	@evento = Evento.create!(params[:evento])
   	flash[:notice] = "El evento ha sido creado con exito"
-  	redirect_to homepage_index_path
+  	redirect_to evento_path(@evento)
   end
 
   def edit
