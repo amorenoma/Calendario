@@ -1,6 +1,20 @@
-%h2= @evento.asignatura
-%h2= @evento.tipo
-%h3= @evento.fecha
-%h3= @evento.aula
-%h3= @evento.dificultad
+%table
+	%tr
+		%th Asignatura: 
+		%th= @evento.asignatura 
+	%tr
+		%th Tipo: 
+		%th= @evento.tipo
+	%tr
+		%th Fecha: 
+		%th= @evento.fecha
+	%tr
+		%th Aula: 
+		%th= @evento.aula
+	%tr
+		%th Dificultad: 
+		%th= @evento.dificultad
 
+%td= link_to "Atras", mes_path(@mes)
+-if session[:usuario].rol=="Profesor"
+	=link_to 'Modificar', '/logout'
