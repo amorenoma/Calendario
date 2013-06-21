@@ -7,23 +7,23 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 eventos = [
-  {:fecha => '30-Jun-2013 9:00:00', :asignatura => 'IST', :tipo => 'examen', :aula=> '313', :dificultad => '3'},
-  {:fecha => '10-Jun-2013 12:00:00', :asignatura => 'TC', :tipo => 'examen', :aula=> '302', :dificultad => '4'},
-  {:fecha => '12-Jun-2013 12:00:00', :asignatura => 'SAT', :tipo => 'examen', :aula=> '302', :dificultad => '4'},
-  {:fecha => '1-Jun-2013 15:00:00', :asignatura => 'DAT', :tipo => 'examen', :aula=> '302', :dificultad => '2'}
+  {:fecha => 'Sun, 30 Jun 2013 09:00:00 +0000', :asignatura => 'IST', :tipo => 'examen', :aula=> '313', :dificultad => '3'},
+  {:fecha => 'Mon, 10 Jun 2013 12:00:00 +0000', :asignatura => 'TC', :tipo => 'examen', :aula=> '302', :dificultad => '4'},
+  {:fecha => 'Wed, 12 Jun 2013 12:00:00 +0000', :asignatura => 'SAT', :tipo => 'examen', :aula=> '302', :dificultad => '4'},
+  {:fecha => 'Sat, 01 Jun 2013 15:00:00 +0000', :asignatura => 'DAT', :tipo => 'examen', :aula=> '302', :dificultad => '2'}
 ]  
 
 meses = [
-  {:mes => 'Septiembre', :dias=> '30'},
-  {:mes => 'Octubre', :dias=> '31'},
-  {:mes => 'Noviembre', :dias=> '30'},
-  {:mes => 'Diciembre', :dias=> '31'},
-  {:mes => 'Enero', :dias=> '31'},
-  {:mes => 'Febrero', :dias=> '28'},
-  {:mes => 'Marzo', :dias=> '31'},
-  {:mes => 'Abril', :dias=> '30'},
-  {:mes => 'Mayo', :dias=> '31'},
-  {:mes => 'Junio', :dias=> '30'}
+  {:mes => 'Septiembre', :dias=> '30',:nmes=> '9'},
+  {:mes => 'Octubre', :dias=> '31',:nmes=> '10'},
+  {:mes => 'Noviembre', :dias=> '30',:nmes=> '11'},
+  {:mes => 'Diciembre', :dias=> '31',:nmes=> '12'},
+  {:mes => 'Enero', :dias=> '31',:nmes=> '1'},
+  {:mes => 'Febrero', :dias=> '28',:nmes=> '2'},
+  {:mes => 'Marzo', :dias=> '31',:nmes=> '3'},
+  {:mes => 'Abril', :dias=> '30',:nmes=> '4'},
+  {:mes => 'Mayo', :dias=> '31',:nmes=> '5'},
+  {:mes => 'Junio', :dias=> '30',:nmes=> '6'}
 ]
 
 usuarios = [
@@ -38,7 +38,7 @@ end
 
 Mes.send(:attr_accessible, :mes , :dias)
 meses.each do |mes|
-  Mese.create!(mes)
+  Mes.create!(mes)
 end
 
 Usuario.send(:attr_accessible, :nombre , :email, :rol, :key, :nick)

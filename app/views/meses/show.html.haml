@@ -1,8 +1,13 @@
-%h2 hola
+%h2= @mes.mes
 
 
 
-- for i in 1..Integer(@mes.dias)
-    %h2= i
-    @eventos.fecha
+-@dias.each_with_index do |dia, index|
+  %h1=index+1
+  -if dia!=""
+    %td=dia.asignatura
+    %td=dia.tipo
+    %td=dia.fecha.hour
+    %td=dia.fecha.min
+    -#.wday domingo=0
 
