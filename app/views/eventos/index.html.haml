@@ -1,20 +1,16 @@
--#  This file is app/views/movies/index.html.haml
-%h2 JUNIO
+
+%p=link_to 'Crear evento', new_evento_path
 
 %table#calendars
   %thead
     %tr
       %th Fecha
       %th Asignatura
-      %th Tipo prueba
-      %th Aula
-      %th Dificultad
   %tbody
-    - @calendars.each do |calendar|
+    - @eventos.each do |evento|
       %tr
-        %td= calendar.fecha
-        %td= calendar.asignatura
-        %td= calendar.tipo
-        %td= calendar.aula
-        %td= calendar.dificultad
-        %td= link_to "ver evento", calendar_path(calendar)
+        %td= evento.fecha
+        %td= evento.asignatura
+        %td= link_to "Ver evento", evento_path(evento)
+        %td= link_to "Modificar evento", edit_evento_path(evento)
+        %td= button_to "Borrar", evento_path(evento), :method => :delete, :confirm => "¿Estas seguro?"

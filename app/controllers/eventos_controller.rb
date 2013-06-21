@@ -1,5 +1,10 @@
 class EventosController < ApplicationController
 
+  def index
+    #este es un modo de ordenar (en el show.html.haml el otro):
+    @eventos = Evento.find(:all)
+  end
+
   def create
   	@evento = Evento.create!(params[:evento])
   	flash[:notice] = "El evento ha sido creado con exito"
