@@ -8,14 +8,17 @@ class MesesController < ApplicationController
         datos.push(evento)
       end
     end
-    dias= Array.new(@mes.dias) {""} 
+    listadias=Array.new(@mes.dias) #=> [true, true, true]
+    eventosdia=[]
     for i in 1..@mes.dias
+      eventosdia=[]
       datos.each do |dato|
         if dato.fecha.day==i
-          dias[i-1]=dato
+          eventosdia.append(dato)
         end
       end
+      listadias[i-1]=eventosdia
     end
-    @dias=dias
+    @listadias=listadias
   end
 end

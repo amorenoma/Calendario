@@ -2,13 +2,14 @@
 
 
 
--@dias.each_with_index do |dia, index|
+-@listadias.each_with_index do |dia, index|
   #num
     %h1.num= index+1
-    -if dia!=""
-      %td=dia.asignatura
-      %td=dia.tipo
-      -#.wday domingo=0
-      %td= link_to "Ver evento", evento_path(dia)
+    -if not dia.empty?
+      -dia.each do |evento|
+        %td=evento.asignatura
+        %td=evento.tipo
+        -#.wday domingo=0
+        %td= link_to "Ver evento", evento_path(evento)
 
 %p= link_to "Atras", homepage_index_path

@@ -1,7 +1,7 @@
 = form_tag eventos_path do
 
-	%p= label :evento, :fecha, "Fecha (ej formato: 30-06-2013 9:00:00)"
-	= text_field :evento, "fecha"
+	%p= label :evento, :fecha, "Fecha"
+	= datetime_select :evento, "fecha", :start_year => 2012, :end_year => 2013
 
 	%p= label :evento, :asignatura, "Asignatura"
 	= text_field :evento, "asignatura"
