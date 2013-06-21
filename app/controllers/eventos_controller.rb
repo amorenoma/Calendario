@@ -35,7 +35,7 @@ class EventosController < ApplicationController
   def destroy
   	@evento = Evento.find(params[:id])
   	@evento.destroy
-  	flash[:notice]= "Evento borrado"
+  	flash[:notice]= "El evento ha sido borrado"
   	redirect_to eventos_path
   end
 
