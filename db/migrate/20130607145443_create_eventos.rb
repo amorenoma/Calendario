@@ -6,6 +6,7 @@ class CreateEventos < ActiveRecord::Migration
       t.string 'tipo'
       t.string 'aula'
       t.string 'dificultad'
+      t.string 'comentario'
       t.timestamps
     end
   end
