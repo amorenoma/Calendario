@@ -1,9 +1,8 @@
-%registro=link_to 'Registro', '/new',:class => "link_registro"
-
 - if session[:usuario]
   =link_to 'Cerrar sesion', '/logout'
 - else
   %acceder=link_to 'Acceder', '/login'
+  %registro=link_to 'Registro', '/new',:class => "link_registro"
 
 -if session[:usuario]
   -if session[:usuario].rol=="Profesor"
@@ -17,5 +16,3 @@
     %p.mes
       = mes.mes
       = link_to "Ver mes", mes_path(mes)
-
-

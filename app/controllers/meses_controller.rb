@@ -1,7 +1,15 @@
 class MesesController < ApplicationController 
   def show
+		@asignaturas = Evento.all_asignaturas
+
+		@selected_asignaturas = params[:asignaturas] || {}
+    
+    if @selected_asignaturas == {}
+      @selected_asignaturas = Hash[@asignaturas.map {|asignatura| [asignatura, asignatura]}]
+    end
+
     @mes = Mes.find(params[:id])
-    eventos = Evento.all
+    eventos = Evento.find_all_by_asignatura(@selected_asignaturas.keys)
     datos= Array.new
     eventos.each do |evento|
       if evento.fecha.month.to_s==@mes.nmes
@@ -21,4 +29,5 @@ class MesesController < ApplicationController
     end
     @listadias=listadias
   end
+
 end

@@ -12,7 +12,13 @@
 
 body{
 	background-color: white;
+<<<<<<< HEAD
         width:1000px;
+=======
+	width:1000px;
+	margin-left: auto;
+	margin-right: auto;
+>>>>>>> 95ede55f7d5b9b529f6b02680f4a58a246326e68
 }
 
 h2{
@@ -22,9 +28,15 @@ h2{
 	font: 250% sans-serif; 
 }
 #num{
+<<<<<<< HEAD
         width:13%;
 	height:15%;
         padding:0.1% 0.1% 0.1% 0.1%;
+=======
+    width:110px;
+	height:110px;
+        padding:10px 10px 10px 10px;
+>>>>>>> 95ede55f7d5b9b529f6b02680f4a58a246326e68
 	border:2px solid;
         margin:0.2%;
 	border-color:black;
@@ -34,6 +46,10 @@ h2{
 }
 h1.num{
 	color:#009966;
+<<<<<<< HEAD
+=======
+	display:inline;
+>>>>>>> 95ede55f7d5b9b529f6b02680f4a58a246326e68
 }
 
 .num{
@@ -43,9 +59,9 @@ h1.num{
 img{
 	width:40%;
 	height:20%;
-	position: relative;
+	position: absolute;
 	left: 50%;
-	top:30%;
+	top:40%;
 }
 
 registro{
@@ -88,3 +104,8 @@ p.mes{
   width: 130%;
   padding: 0.4%;
 }	
+
+#aml{
+	background-color: black;
+	float:left;
+}
