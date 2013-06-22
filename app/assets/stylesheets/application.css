@@ -13,6 +13,8 @@
 body{
 	background-color: white;
 	width:1000px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 h2{
@@ -22,7 +24,7 @@ h2{
 	font: 250% sans-serif; 
 }
 #num{
-        width:110px;
+    width:110px;
 	height:110px;
         padding:10px 10px 10px 10px;
 	border:2px solid;
@@ -35,8 +37,6 @@ h2{
 h1.num{
 	color:#009966;
 	display:inline;
-        
-	
 }
 
 .link_registro{
@@ -95,3 +95,8 @@ listames{
   margin: 1em 0;
   padding: 4px;
 }	
+
+#aml{
+	background-color: black;
+	float:left;
+}
