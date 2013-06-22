@@ -1,0 +1,16 @@
+%table#calendars
+  %thead
+    %tr
+      %th Usuario
+      %th Comentario
+      %th Evento en el que esta
+  %tbody
+    - @comentarios.each do |comentario|
+      %tr
+        %td= comentario.usuario
+        %td= comentario.comentario
+        -event=Evento.find(Integer(comentario.evento))
+        %td= link_to "Ver evento", evento_path(event)
+        %td= button_to "Borrar", comentario_path(comentario), :method => :delete, :confirm => "¿Estas seguro?"
+
+%p= link_to "Atras", homepage_index_path
