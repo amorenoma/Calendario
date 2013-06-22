@@ -16,7 +16,7 @@
 		%th= @evento.dificultad
 	-@comentariosevento.each do |comentarioevento|
 		%tr
-			%th Comentario: 
+			%th= comentarioevento.usuario 
 			%th= comentarioevento.comentario
 
 
