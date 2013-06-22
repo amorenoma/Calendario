@@ -60,6 +60,7 @@ Calendario::Application.routes.draw do
   root :to => 'homepage#index'
   resources :homepage, :only => [:index]
   resources :usuarios
+  resources :comentarios
   match '/new' => 'usuarios#new'
   match '/login' => 'usuarios#login'
   post '/usuarios/acceder'

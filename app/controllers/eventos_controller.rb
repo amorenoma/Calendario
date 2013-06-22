@@ -30,6 +30,13 @@ class EventosController < ApplicationController
     		@mes=mes
     	end
     end
+    comentarios = Comentario.all
+    @comentariosevento=[]
+    comentarios.each do |comentario|
+      if params[:id]==comentario.evento
+        @comentariosevento.push comentario
+      end
+    end
   end
 
   def destroy

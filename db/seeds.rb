@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 eventos = [
-  {:fecha => '30-Jun-2013 9:00:00', :asignatura => 'IST', :tipo => 'examen', :aula=> '313', :dificultad => '3', :comentario => ''},
+  {:fecha => '30-Jun-2013 9:00:00', :asignatura => 'IST', :tipo => 'examen', :aula=> '313', :dificultad => '3'},
   {:fecha => '10-Jun-2013 12:00:00', :asignatura => 'TC', :tipo => 'examen', :aula=> '302', :dificultad => '4'},
   {:fecha => '12-Jun-2013 12:00:00', :asignatura => 'SAT', :tipo => 'examen', :aula=> '302', :dificultad => '4'},
   {:fecha => '1-Jun-2013 15:00:00', :asignatura => 'DAT', :tipo => 'examen', :aula=> '302', :dificultad => '2'}
@@ -32,7 +32,9 @@ usuarios = [
 ]
 
 comentarios = [
-  {:comentario => 'Este examen no lo aprueba ni dios', :evento => '4' , :usuario => 'Pheras'},
+  {:comentario => 'Este examen no lo aprueba ni dios1', :evento => '4' , :usuario => 'Pheras'},
+  {:comentario => 'Este examen no lo aprueba ni dios2', :evento => '4' , :usuario => 'Pheras'},
+  {:comentario => 'Este examen no lo aprueba ni dios3', :evento => '4' , :usuario => 'Pheras'},
   {:comentario => 'Estais suspensos', :evento => '3' , :usuario => 'Pheras'}
 ]
 
