@@ -1,8 +1,7 @@
-%registro=link_to 'Registro', '/new',:class => "link_registro"
-
 - if session[:usuario]
   =link_to 'Cerrar sesion', '/logout'
 - else
+  %registro=link_to 'Registro', '/new',:class => "link_registro"
   %acceder=link_to 'Acceder', '/login'
 
 -if session[:usuario]
