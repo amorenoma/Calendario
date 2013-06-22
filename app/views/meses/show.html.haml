@@ -1,6 +1,10 @@
 %h2= @mes.mes
 
-
+= form_tag mes_path, :method => :get, :id => @mes.nmes do
+  - @asignaturas.each do |asignatura|
+    = asignatura
+    = check_box_tag "asignaturas[#{asignatura}]", 1, @selected_asignaturas.include?(asignatura), :id => "asignaturas_#{asignatura}"
+  = submit_tag 'Refresh', :id => 'asignaturas_submit'
 
 -@listadias.each_with_index do |dia, index|
   #num
