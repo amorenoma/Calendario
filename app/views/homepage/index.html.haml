@@ -17,10 +17,8 @@
     %td= mes.mes
     %td= link_to "Ver mes", mes_path(mes)
 
-%br
-=link_to 'Registro', '/new',:class => "link_registro"
-
 - if session[:usuario]
-  =link_to 'Cerrar sesion', '/logout'
+  %p=link_to 'Cerrar sesion', '/logout'
 - else
-  =link_to 'Acceder', '/login'
+  %p=link_to 'Registro', '/new',:class => "link_registro"
+  %p=link_to 'Acceder', '/login'
