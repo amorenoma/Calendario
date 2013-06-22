@@ -1,26 +1,21 @@
+%registro=link_to 'Registro', '/new',:class => "link_registro"
+
+- if session[:usuario]
+  =link_to 'Cerrar sesion', '/logout'
+- else
+  %acceder=link_to 'Acceder', '/login'
+
 -if session[:usuario]
   -if session[:usuario].rol=="Profesor"
     %p=link_to 'Administrar eventos', eventos_path
 
 %h2 Curso 2012/2013
 
--#= form_tag meses_path, method => :get do
--#  = label :meses, :mes, 'MES'
--#  = select :meses, :mes, ['Septiembre','Octubre','Noviembre','Diciembre','Enero','Febrero', 'Marzo', 'Abril', 'Mayo','Junio']
+%img= image_tag("urjc.gif")
+%div{"id:listames" => ""}
+  - @meses.each do |mes|
+    %p.mes
+      = mes.mes
+      = link_to "Ver mes", mes_path(mes)
 
--#  = submit_tag 'Ver mes'
 
--#= button_to 'Ver mes', meses_path(
-- @meses.each do |mes|
-  %tr
-    %br
-    %td= mes.mes
-    %td= link_to "Ver mes", mes_path(mes)
-
-%br
-=link_to 'Registro', '/new',:class => "link_registro"
-
-- if session[:usuario]
-  =link_to 'Cerrar sesion', '/logout'
-- else
-  =link_to 'Acceder', '/login'
