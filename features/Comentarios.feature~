@@ -20,8 +20,6 @@ Given the following Comments exist
     | comentario   | evento    | usuario |
     | Vais a catear | 1      | Pheras |
 
-
-
 Scenario: Student can add comments
   Given I'm logged in as "Rcm", with key "1234"
   And I am on the show event page

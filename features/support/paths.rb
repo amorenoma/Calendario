@@ -24,6 +24,8 @@ module NavigationHelpers
 		when /^the show event page$/ then '/eventos/1'
 		when /^the new comment page$/ then new_comentario_path
 		when /^the comments page$/ then '/comentarios'
+		when /^the month page$/ then '/meses/1'
+
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #

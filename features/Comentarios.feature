@@ -2,7 +2,7 @@ Feature: Teacher and student can add comments
   As a user
   I want to be able to add comments
 
-Background: user Rodri registered
+Background: Database initialized
 Given the following Users exist
     | nombre| nick    | key   | rol   |
     | Pedro | Pheras  | 1234  | Profesor|
