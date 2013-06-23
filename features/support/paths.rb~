@@ -19,8 +19,11 @@ module NavigationHelpers
     when /^Registro$/ then '/new'
     when /^the Register page$/ then '/new'
     when /^the index page$/ then '/homepage'
-    when /^Acceder page$/ then '/login'
-
+    when /^the Acceder page$/ then '/login'
+    when /^the new event page$/ then new_evento_path
+		when /^the show event page$/ then eventos_path
+		when /^the new comment page$/ then new_comentario_path
+		when /^the comments page$/ then '/comentarios'
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #

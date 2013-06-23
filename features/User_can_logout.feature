@@ -3,15 +3,16 @@ Feature: User can logout
   I want to be  able to be logged out
 
 Background: user Rodri registered
+	Given the following Users exist
+    | nombre    | nick	     | key		 | rol  		|
+    | Rodri     | Rcm   		 | 1234    | Alumno   |
   Given I am on the home page
-  When I follow "Registro"
-  When I fill in "Nombre" with "Rodri"
-  And I fill in "Email" with "Rodri@gmail.com"
-  And I fill in "Rol" with "Alumno"
-  And I fill in "Nick" with "Rcm"
+	When I follow "Acceder"
+  Then I should be on the Acceder page
+  When I fill in "Nick" with "Rcm"
   And I fill in "Key" with "1234"
-  And I press "Registro"
-  Then I should be on the index page
+  And I press "Acceder"
+  Then I should see "Rcm ha accedido correctamente"
 
 
 Scenario: user log in
