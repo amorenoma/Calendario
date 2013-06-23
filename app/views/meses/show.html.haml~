@@ -1,6 +1,6 @@
 %h2= @mes.mes
 
-= form_tag meses_path, :method => :get, :id => @mes.nmes do
+= form_tag mes_path, :method => :get, :id => @mes.nmes do
   - @asignaturas.each do |asignatura|
     = asignatura
     = check_box_tag "asignaturas[#{asignatura}]", 1, @selected_asignaturas.include?(asignatura), :id => "asignaturas_#{asignatura}"
@@ -8,12 +8,12 @@
 
 -@listadias.each_with_index do |dia, index|
   #num
-    %h1.num= index+1
-    -if not dia.empty?
-      -dia.each do |evento|
-        %td=evento.asignatura
-        %td=evento.tipo
-        -#.wday domingo=0
-        %td= link_to "Ver evento", evento_path(evento)
+    -if index>=@primerdia
+      %h1.num= index+1-@primerdia
+      -if not dia.empty?
+        -dia.each do |evento|
+          %td=evento.asignatura
+          %td=evento.tipo
+          %td= link_to "Ver mas", evento_path(evento)
 
-%p= link_to "Atras", homepage_index_path
+#aml= link_to "Atras", homepage_index_path

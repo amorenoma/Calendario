@@ -4,20 +4,14 @@
   %registro=link_to 'Registro', '/new',:class => "link_registro"
   %acceder=link_to 'Acceder', '/login'
 
-#admin
-  -if session[:usuario]
-    -if session[:usuario].rol=="Profesor"
-      %p
-        = form_tag  eventos_path, :method => :get do
-          = submit_tag 'Administrar eventos'
-      %p
-        = form_tag  comentarios_path, :method => :get do
-          = submit_tag 'Administrar comentarios'
+-if session[:usuario]
+  -if session[:usuario].rol=="Profesor"
+    %p=link_to 'Administrar eventos', eventos_path
+    %p=link_to 'Administrar comentarios', comentarios_path
 
 %h2 Curso 2012/2013
 
-%a{:href => "https://www.urjc.es/"}
-  %img= image_tag("urjc.gif")
+%img= image_tag("urjc.gif")
 #meses
   - @meses.each do |mes|
     %p.mes

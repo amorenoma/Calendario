@@ -1,12 +1,11 @@
-%p
-= form_tag  new_evento_path, :method => :get do
-  = submit_tag 'Crear evento'
 
-%table#admineventos
+%p=link_to 'Crear evento', new_evento_path
+
+%table#calendars
   %thead
     %tr
       %th Fecha
-      %th Asignatura
+      %th.modeventotitle Asignatura
   %tbody
     - @eventos.each do |evento|
       %tr
@@ -16,5 +15,4 @@
         %td= link_to "Modificar evento", edit_evento_path(evento)
         %td= button_to "Borrar", evento_path(evento), :method => :delete, :confirm => "¿Estas seguro?"
 
-= form_tag homepage_index_path, :method => :get do
-  = submit_tag 'Cancelar'
+%p= link_to "Atras", homepage_index_path

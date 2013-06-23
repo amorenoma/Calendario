@@ -45,23 +45,10 @@ h1.num{
 
 img{
 	width:40%;
-	height:25%;
+	height:20%;
 	position: absolute;
 	left: 50%;
 	top:35%;
-}
-
-img:hover{
-  -webkit-transform:rotate(360deg);
-  -moz-transform:rotate(360deg);
-  -o-transform:rotate(360deg);
-  -ms-transform:rotate(360deg);
-  transform:rotate(360deg);
-  -webkit-transition: 3s linear;
-  -moz-transition: 3s linear;
-  -o-transition: 3s linear;
-  -ms-transition: 3s linear;
-  transition: 3s linear;
 }
 
 registro{
@@ -94,7 +81,9 @@ acceder{
 .modeventoasig{
 	padding-left:6%;
 }
-
+#calendars{
+	border:2px solid;
+}
 #meses{
 	position: absolute;
 	left: 15%;
@@ -102,7 +91,7 @@ acceder{
 	background-color: #CCCCCC;
         border:2px solid;
 	border-color:black;
-	border-radius:15px 55px;
+	border-radius:15px 55px
 }
 
 p.mes{
@@ -124,6 +113,7 @@ p.mes{
   width: 130%;
   padding: 0.4%;
 }	
+<<<<<<< HEAD
 
 #admin{
 	text-align:center;
@@ -182,3 +172,5 @@ p.mes{
 	display:block;
 	color:red;
 }
+=======
+>>>>>>> 2a5a6f6d61b735f43c42816896d6555b6d707f92
