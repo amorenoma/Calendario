@@ -13,6 +13,7 @@
 body{
 	background-color: white;
         width:1000px;
+        height:600px;
 }
 
 h2{
@@ -22,8 +23,9 @@ h2{
 	font: 250% sans-serif; 
 }
 #num{
+	
         width:13%;
-	height:15%;
+	height:20%;
         padding:0.1% 0.1% 0.1% 0.1%;
 	border:2px solid;
         margin:0.2%;
@@ -34,6 +36,7 @@ h2{
 }
 h1.num{
 	color:#009966;
+        font-size:100%
 }
 
 .num{
@@ -45,7 +48,7 @@ img{
 	height:20%;
 	position: absolute;
 	left: 50%;
-	top:30%;
+	top:35%;
 }
 
 registro{
@@ -59,6 +62,28 @@ acceder{
         top: 2%;
 }
 
+.eventos{
+	  
+          left: 150%;
+          border:2px solid;
+	  border-color:black; 
+	    
+}
+.title{
+	
+	display:block;
+        text-align:left;
+	font: 120% sans-serif bold;
+         
+}
+
+
+.modeventoasig{
+	padding-left:6%;
+}
+#calendars{
+	border:2px solid;
+}
 #meses{
 	position: absolute;
 	left: 15%;

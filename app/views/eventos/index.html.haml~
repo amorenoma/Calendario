@@ -5,7 +5,7 @@
   %thead
     %tr
       %th Fecha
-      %th Asignatura
+      %th.modeventotitle Asignatura
   %tbody
     - @eventos.each do |evento|
       %tr
