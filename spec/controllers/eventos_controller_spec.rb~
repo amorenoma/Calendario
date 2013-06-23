@@ -8,6 +8,12 @@ describe EventosController do
       post :create, {:evento => evt}
       flash[:notice].should == "El evento ha sido creado con exito"
     end
+    it 'mostrar un evento' do
+      evt = mock('evt1', :fecha => '30-Jun-2013 9:00:00', :asignatura => 'IST', :tipo => 'examen', :aula => '313', :dificultad => '3')
+      Evento.stub(:find).with('1').and_return(evt)
+      get :show, {:id => 1}
+      response.should render_template("show")
+    end
     it 'modificar un evento' do
       evt = mock('evt1')
       Evento.should_receive(:find).with('1').and_return(evt)
