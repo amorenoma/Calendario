@@ -45,7 +45,7 @@ h1.num{
 
 img{
 	width:40%;
-	height:20%;
+	height:25%;
 	position: absolute;
 	left: 50%;
 	top:35%;
@@ -138,7 +138,7 @@ p.mes{
         font: 120% sans-serif bold; 
 	background-color: #FFCC66;
 	border:2px solid;
-	border-color:#FFCC99;
+	border-color:#FF9966;
 	border-radius:15px 55px;
 	border-radius:15px 55px;
 

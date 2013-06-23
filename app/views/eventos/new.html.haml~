@@ -19,4 +19,4 @@
 
 %p
 = form_tag homepage_index_path, :method => :get do
-	= submit_tag 'Cancelar'
+  = submit_tag 'Cancelar'
