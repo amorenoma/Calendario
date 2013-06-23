@@ -5,7 +5,14 @@
     = asignatura
     = check_box_tag "asignaturas[#{asignatura}]", 1, @selected_asignaturas.include?(asignatura), :id => "asignaturas_#{asignatura}"
   = submit_tag 'Refresh', :id => 'asignaturas_submit'
-
+#dweeks
+  %th Lunes
+  %th Martes
+  %th Miercoles
+  %th Jueves
+  %th Viernes
+  %th Sabado
+  %th Domingo
 -@listadias.each_with_index do |dia, index|
   #num
     -if index>=@nhuecos
