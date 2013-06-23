@@ -132,9 +132,21 @@ p.mes{
 
 }
 
-#admineventos{
+#admineventos, #admincomentarios{
 	text-align:center;
 	width: 70%;
+        font: 120% sans-serif bold; 
+	background-color: #FFCC66;
+	border:2px solid;
+	border-color:#FF9966;
+	border-radius:15px 55px;
+	border-radius:15px 55px;
+
+}
+
+#nuevoevento{
+	text-align:center;
+	width: 40%;
         font: 120% sans-serif bold; 
 	background-color: #FFCC66;
 	border:2px solid;
