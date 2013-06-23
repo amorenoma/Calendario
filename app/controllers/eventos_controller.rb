@@ -1,8 +1,7 @@
 class EventosController < ApplicationController
 
   def index
-    #este es un modo de ordenar (en el show.html.haml el otro):
-    @eventos = Evento.find(:all)
+    @eventos = Evento.find(:all).sort_by {|evt| evt.fecha}
   end
 
   def create
