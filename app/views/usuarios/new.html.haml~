@@ -1,6 +1,6 @@
 %h1 Registro
 
-= form_tag usuario_path do
+= form_tag usuarios_path do
 
   = label :usuario, :nombre, 'Nombre'
   = text_field :usuario, 'nombre'
