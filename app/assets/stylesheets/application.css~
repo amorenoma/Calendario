@@ -81,9 +81,7 @@ acceder{
 .modeventoasig{
 	padding-left:6%;
 }
-#calendars{
-	border:2px solid;
-}
+
 #meses{
 	position: absolute;
 	left: 15%;
@@ -91,7 +89,7 @@ acceder{
 	background-color: #CCCCCC;
         border:2px solid;
 	border-color:black;
-	border-radius:15px 55px
+	border-radius:15px 55px;
 }
 
 p.mes{
@@ -113,3 +111,35 @@ p.mes{
   width: 130%;
   padding: 0.4%;
 }	
+
+#admin{
+	text-align:center;
+	width: 40%;
+        font: 120% sans-serif bold; 
+	background-color: #FFCC66;
+	border-radius:15px 55px;
+}
+
+#registrarse, #logearse{
+	text-align:center;
+	width: 40%;
+        font: 120% sans-serif bold; 
+	background-color: #CCFFFF;
+	border:2px solid;
+	border-color:#009966;
+	border-radius:15px 55px;
+	border-radius:15px 55px;
+
+}
+
+#admineventos{
+	text-align:center;
+	width: 70%;
+        font: 120% sans-serif bold; 
+	background-color: #FFCC66;
+	border:2px solid;
+	border-color:#FFCC99;
+	border-radius:15px 55px;
+	border-radius:15px 55px;
+
+}

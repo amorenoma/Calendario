@@ -1,14 +1,15 @@
 %h1 Acceder
 
 = form_tag usuarios_acceder_path do
-
-  = label :usuario, :nick, 'Nick'
-  = text_field :usuario, 'nick'
-
-  = label :usuario, :key, 'Key'
-  = password_field :usuario, 'key'
+  #logearse 
+    %p= label :usuario, :nick, 'Nick'
+    = text_field :usuario, 'nick'
   
-  = submit_tag 'Acceder'
+
+    %p= label :usuario, :key, 'Key'
+    = password_field :usuario, 'key'
+  
+    %p= submit_tag 'Acceder'
     
 = form_tag homepage_index_path, :method => :get do
   = submit_tag 'Cancelar'
