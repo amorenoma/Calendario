@@ -168,3 +168,17 @@ p.mes{
 	border-radius:15px 55px;
 
 }
+.mostrarevento{
+	text-align:center;
+	width: 40%;
+        font: 120% sans-serif bold; 
+	background-color: #CCFFFF;
+	border:2px solid;
+	border-color:#009966;
+	border-radius:15px 55px;
+	border-radius:15px 55px;
+}
+#buttons{
+	display:block;
+	color:red;
+}
