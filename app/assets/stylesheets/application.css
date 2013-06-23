@@ -45,23 +45,10 @@ h1.num{
 
 img{
 	width:40%;
-	height:25%;
+	height:20%;
 	position: absolute;
 	left: 50%;
 	top:35%;
-}
-
-img:hover{
-  -webkit-transform:rotate(360deg);
-  -moz-transform:rotate(360deg);
-  -o-transform:rotate(360deg);
-  -ms-transform:rotate(360deg);
-  transform:rotate(360deg);
-  -webkit-transition: 3s linear;
-  -moz-transition: 3s linear;
-  -o-transition: 3s linear;
-  -ms-transition: 3s linear;
-  transition: 3s linear;
 }
 
 registro{
@@ -102,7 +89,7 @@ acceder{
 	background-color: #CCCCCC;
         border:2px solid;
 	border-color:black;
-	border-radius:15px 55px;
+	border-radius:15px 55px
 }
 
 p.mes{
@@ -124,47 +111,3 @@ p.mes{
   width: 130%;
   padding: 0.4%;
 }	
-
-#admin{
-	text-align:center;
-	width: 40%;
-        font: 120% sans-serif bold; 
-	background-color: #FFCC66;
-	border-radius:15px 55px;
-}
-
-#registrarse, #logearse{
-	text-align:center;
-	width: 40%;
-        font: 120% sans-serif bold; 
-	background-color: #CCFFFF;
-	border:2px solid;
-	border-color:#009966;
-	border-radius:15px 55px;
-	border-radius:15px 55px;
-
-}
-
-#admineventos, #admincomentarios{
-	text-align:center;
-	width: 70%;
-        font: 120% sans-serif bold; 
-	background-color: #FFCC66;
-	border:2px solid;
-	border-color:#FF9966;
-	border-radius:15px 55px;
-	border-radius:15px 55px;
-
-}
-
-#nuevoevento, #editarevento{
-	text-align:center;
-	width: 40%;
-        font: 120% sans-serif bold; 
-	background-color: #FFCC66;
-	border:2px solid;
-	border-color:#FF9966;
-	border-radius:15px 55px;
-	border-radius:15px 55px;
-
-}

@@ -9,6 +9,10 @@ class MesesController < ApplicationController
     end
 
     @mes = Mes.find(params[:id])
+    @nhuecos = DateTime.parse("#{@mes.year}-#{@mes.nmes}-1").wday-1
+    if @nhuecos==-1
+      @nhuecos=6
+    end
     eventos = Evento.find_all_by_asignatura(@selected_asignaturas.keys)
     datos= Array.new
     eventos.each do |evento|
@@ -16,7 +20,8 @@ class MesesController < ApplicationController
         datos.push(evento)
       end
     end
-    listadias=Array.new(@mes.dias) #=> [true, true, true]
+    casillas=@mes.dias+@nhuecos
+    listadias=Array.new(casillas) #=> [true, true, true]
     eventosdia=[]
     for i in 1..@mes.dias
       eventosdia=[]
@@ -25,7 +30,7 @@ class MesesController < ApplicationController
           eventosdia.append(dato)
         end
       end
-      listadias[i-1]=eventosdia
+      listadias[i-1+@nhuecos]=eventosdia
     end
     @listadias=listadias
   end
