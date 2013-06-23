@@ -132,7 +132,7 @@ p.mes{
 
 }
 
-#admineventos{
+#admineventos, #admincomentarios{
 	text-align:center;
 	width: 70%;
         font: 120% sans-serif bold; 

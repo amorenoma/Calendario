@@ -144,7 +144,7 @@ p.mes{
 
 }
 
-#nuevoevento{
+#nuevoevento, #editarevento{
 	text-align:center;
 	width: 40%;
         font: 120% sans-serif bold; 

@@ -1,19 +1,22 @@
 = form_tag evento_path(@evento), :method => :put do
-	%p= label :evento, :fecha, "Fecha (ej formato: 30-Jun-2013 9:00:00)"
-	= text_field :evento, "fecha"
+	#editarevento	
+		%p= label :evento, :fecha, "Fecha (ej formato: 30-Jun-2013 9:00:00)"
+		= text_field :evento, "fecha"
 
-	%p= label :evento, :asignatura, "Asignatura"
-	= text_field :evento, "asignatura"
+		%p= label :evento, :asignatura, "Asignatura"
+		= text_field :evento, "asignatura"
 
-	%p= label :evento, :tipo, "Tipo"
-	= select :evento, :tipo, ["Practica", "Examen"]
+		%p= label :evento, :tipo, "Tipo"
+		= select :evento, :tipo, ["Practica", "Examen"]
 
-	%p= label :evento, :aula, "Aula"
-	= text_field :evento, "aula"
+		%p= label :evento, :aula, "Aula"
+		= text_field :evento, "aula"
 
-	%p= label :evento, :dificultad, "Dificultad"
-	= select :evento, :dificultad, ["1", "2", "3", "4", "5"]
+		%p= label :evento, :dificultad, "Dificultad"
+		= select :evento, :dificultad, ["1", "2", "3", "4", "5"]
 
-	%p=submit_tag "Actualizar"
+		%p=submit_tag "Actualizar"
 
-%p= link_to "Atras", evento_path(@evento)
+%p
+= form_tag evento_path(@evento), :method => :get do
+	= submit_tag "Atras"
