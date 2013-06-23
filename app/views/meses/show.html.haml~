@@ -8,8 +8,8 @@
 
 -@listadias.each_with_index do |dia, index|
   #num
-    -if index>=@primerdia
-      %h1.num= index+1-@primerdia
+    -if index>=@nhuecos
+      %h1.num= index+1-@nhuecos
       -if not dia.empty?
         -dia.each do |evento|
           %td=evento.asignatura

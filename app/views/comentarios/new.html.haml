@@ -1,10 +1,10 @@
 = form_tag comentarios_path do
+	#nuevocomentario
+		%p= label :comentario, :comentario, "Comentario"
+		= text_field :comentario, "comentario"
 
-	%p= label :comentario, :comentario, "Comentario"
-	= text_field :comentario, "comentario"
+		= hidden_field :comentario, :evento, :value => @idevento
 
-	= hidden_field :comentario, :evento, :value => @idevento
+		= hidden_field :comentario, :usuario, :value => session[:usuario].nick
 
-	= hidden_field :comentario, :usuario, :value => session[:usuario].nick
-
-	%p=submit_tag "Comentar"
+		%p=submit_tag "Comentar"
