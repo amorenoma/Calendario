@@ -14,16 +14,16 @@ eventos = [
 ]  
 
 meses = [
-  {:mes => 'Septiembre', :dias=> '30',:nmes=> '9'},
-  {:mes => 'Octubre', :dias=> '31',:nmes=> '10'},
-  {:mes => 'Noviembre', :dias=> '30',:nmes=> '11'},
-  {:mes => 'Diciembre', :dias=> '31',:nmes=> '12'},
-  {:mes => 'Enero', :dias=> '31',:nmes=> '1'},
-  {:mes => 'Febrero', :dias=> '28',:nmes=> '2'},
-  {:mes => 'Marzo', :dias=> '31',:nmes=> '3'},
-  {:mes => 'Abril', :dias=> '30',:nmes=> '4'},
-  {:mes => 'Mayo', :dias=> '31',:nmes=> '5'},
-  {:mes => 'Junio', :dias=> '30',:nmes=> '6'}
+  {:mes => 'Septiembre', :dias=> '30',:nmes=> '9',:year=> '2012'},
+  {:mes => 'Octubre', :dias=> '31',:nmes=> '10',:year=> '2012'},
+  {:mes => 'Noviembre', :dias=> '30',:nmes=> '11',:year=> '2012'},
+  {:mes => 'Diciembre', :dias=> '31',:nmes=> '12',:year=> '2012'},
+  {:mes => 'Enero', :dias=> '31',:nmes=> '1',:year=> '2013'},
+  {:mes => 'Febrero', :dias=> '28',:nmes=> '2',:year=> '2013'},
+  {:mes => 'Marzo', :dias=> '31',:nmes=> '3',:year=> '2013'},
+  {:mes => 'Abril', :dias=> '30',:nmes=> '4',:year=> '2013'},
+  {:mes => 'Mayo', :dias=> '31',:nmes=> '5',:year=> '2013'},
+  {:mes => 'Junio', :dias=> '30',:nmes=> '6',:year=> '2013'}
 ]
 
 usuarios = [

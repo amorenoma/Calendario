@@ -8,12 +8,12 @@
 
 -@listadias.each_with_index do |dia, index|
   #num
-    %h1.num= index+1
-    -if not dia.empty?
-      -dia.each do |evento|
-        %td=evento.asignatura
-        %td=evento.tipo
-        -#.wday domingo=0
-        %td= link_to "Ver evento", evento_path(evento)
+    -if index>=@nhuecos
+      %h1.num= index+1-@nhuecos
+      -if not dia.empty?
+        -dia.each do |evento|
+          %td=evento.asignatura
+          %td=evento.tipo
+          %td= link_to "Ver mas", evento_path(evento)
 
 #aml= link_to "Atras", homepage_index_path

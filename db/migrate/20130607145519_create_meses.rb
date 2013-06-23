@@ -4,6 +4,7 @@ class CreateMeses < ActiveRecord::Migration
       t.string 'mes' 
       t.integer 'dias'
       t.string 'nmes'
+      t.string 'year'
       t.timestamps 
    end
   end
