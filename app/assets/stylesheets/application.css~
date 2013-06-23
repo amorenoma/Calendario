@@ -81,9 +81,7 @@ acceder{
 .modeventoasig{
 	padding-left:6%;
 }
-#calendars{
-	border:2px solid;
-}
+
 #meses{
 	position: absolute;
 	left: 15%;
@@ -169,7 +167,7 @@ p.mes{
 	border-radius:15px 55px;
 }
 #buttons{
-	display:block;
+	display:inline;
 	color:red;
 }
 =======

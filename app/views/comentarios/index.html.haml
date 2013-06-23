@@ -1,4 +1,4 @@
-%table#calendars
+%table#admincomentarios
   %thead
     %tr
       %th Usuario
@@ -13,4 +13,6 @@
         %td= link_to "Ver evento", evento_path(event)
         %td= button_to "Borrar", comentario_path(comentario), :method => :delete, :confirm => "¿Estas seguro?"
 
-%p= link_to "Atras", homepage_index_path
+%p
+= form_tag homepage_index_path, :method => :get do
+  = submit_tag 'Cancelar'
