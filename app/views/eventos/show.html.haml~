@@ -19,7 +19,7 @@
 	-@comentariosevento.each do |comentarioevento|
 		%tr 
 			%th= comentarioevento.usuario 
-			%th= comentarioevento.comentario
+			%th.comentario= comentarioevento.comentario
 
 
 -if session[:usuario]
@@ -32,4 +32,6 @@
 		=link_to 'Eventos', eventos_path
 		=link_to 'Administrar comentarios', comentarios_path
 		%p= button_to "Borrar", evento_path(@evento), :method => :delete, :confirm => "¿Estas seguro?"
-%td= link_to "Calendario", mes_path(@mes)
+%td
+= form_tag  mes_path(@mes), :method => :get do
+	= submit_tag 'Calendario'

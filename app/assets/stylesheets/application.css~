@@ -51,6 +51,19 @@ img{
 	top:35%;
 }
 
+img:hover{
+  -webkit-transform:rotate(360deg);
+  -moz-transform:rotate(360deg);
+  -o-transform:rotate(360deg);
+  -ms-transform:rotate(360deg);
+  transform:rotate(360deg);
+  -webkit-transition: 3s linear;
+  -moz-transition: 3s linear;
+  -o-transition: 3s linear;
+  -ms-transition: 3s linear;
+  transition: 3s linear;
+}
+
 registro{
 	position: absolute;
 	left: 83%;
@@ -144,7 +157,7 @@ p.mes{
 
 }
 
-#nuevoevento{
+#nuevoevento, #editarevento{
 	text-align:center;
 	width: 40%;
         font: 120% sans-serif bold; 

@@ -32,4 +32,6 @@
 		=link_to 'Eventos', eventos_path
 		=link_to 'Administrar comentarios', comentarios_path
 		%p= button_to "Borrar", evento_path(@evento), :method => :delete, :confirm => "¿Estas seguro?"
-%td= link_to "Calendario", mes_path(@mes)
+%p
+= form_tag  mes_path(@mes), :method => :get do
+	= submit_tag 'Calendario'

@@ -1,12 +1,18 @@
--if session[:usuario]
-  #admin
+- if session[:usuario]
   =link_to 'Cerrar sesion', '/logout'
-  -if session[:usuario].rol=="Profesor"
-    %p=link_to 'Administrar eventos', eventos_path
-    %p=link_to 'Administrar comentarios', comentarios_path
 - else
-%registro=link_to 'Registro', '/new',:class => "link_registro"
-%acceder=link_to 'Acceder', '/login'
+  %registro=link_to 'Registro', '/new',:class => "link_registro"
+  %acceder=link_to 'Acceder', '/login'
+
+#admin
+  -if session[:usuario]
+    -if session[:usuario].rol=="Profesor"
+      %p
+        = form_tag  eventos_path, :method => :get do
+          = submit_tag 'Administrar eventos'
+      %p
+        = form_tag  comentarios_path, :method => :get do
+          = submit_tag 'Administrar comentarios'
 
 %h2 Curso 2012/2013
 
