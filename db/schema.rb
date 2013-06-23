@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(:version => 20130621181944) do
     t.string   "mes"
     t.integer  "dias"
     t.string   "nmes"
+    t.string   "year"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

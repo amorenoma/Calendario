@@ -7,10 +7,10 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 eventos = [
-  {:fecha => 'Sun, 30 Jun 2013 09:00:00 +0000', :asignatura => 'IST', :tipo => 'examen', :aula=> '313', :dificultad => '3'},
-  {:fecha => 'Mon, 10 Jun 2013 12:00:00 +0000', :asignatura => 'TC', :tipo => 'examen', :aula=> '302', :dificultad => '4'},
-  {:fecha => 'Wed, 12 Jun 2013 12:00:00 +0000', :asignatura => 'SAT', :tipo => 'examen', :aula=> '302', :dificultad => '4'},
-  {:fecha => 'Sat, 01 Jun 2013 15:00:00 +0000', :asignatura => 'DAT', :tipo => 'examen', :aula=> '302', :dificultad => '2'}
+  {:fecha => '30-Jun-2013 9:00:00', :asignatura => 'IST', :tipo => 'examen', :aula=> '313', :dificultad => '3'},
+  {:fecha => '10-Jun-2013 12:00:00', :asignatura => 'TC', :tipo => 'examen', :aula=> '302', :dificultad => '4'},
+  {:fecha => '12-Jun-2013 12:00:00', :asignatura => 'SAT', :tipo => 'examen', :aula=> '302', :dificultad => '4'},
+  {:fecha => '1-Jun-2013 15:00:00', :asignatura => 'DAT', :tipo => 'examen', :aula=> '302', :dificultad => '2'}
 ]  
 
 meses = [
@@ -31,6 +31,13 @@ usuarios = [
   {:nombre => 'Pedro De las Heras', :email => 'pheras@gmail.com' , :rol => 'Profesor' , :key => '1234', :nick => 'Pheras'}
 ]
 
+comentarios = [
+  {:comentario => 'Este examen no lo aprueba ni dios1', :evento => '4' , :usuario => 'Pheras'},
+  {:comentario => 'Este examen no lo aprueba ni dios2', :evento => '4' , :usuario => 'Pheras'},
+  {:comentario => 'Este examen no lo aprueba ni dios3', :evento => '4' , :usuario => 'Pheras'},
+  {:comentario => 'Estais suspensos', :evento => '3' , :usuario => 'Pheras'}
+]
+
 Evento.send(:attr_accessible, :fecha, :asignatura, :tipo, :aula, :dificultad)
 eventos.each do |evento|
   Evento.create!(evento)
@@ -44,4 +51,9 @@ end
 Usuario.send(:attr_accessible, :nombre , :email, :rol, :key, :nick)
 usuarios.each do |usuario|
   Usuario.create!(usuario)
+end
+
+Comentario.send(:attr_accessible, :comentario , :evento, :usuario)
+comentarios.each do |comentario|
+  Comentario.create!(comentario)
 end
