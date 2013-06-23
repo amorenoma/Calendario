@@ -6,7 +6,9 @@
       %th Evento en el que esta
   %tbody
     - @comentarios.each do |comentario|
+      %p
       %tr
+        %p
         %td= comentario.usuario
         %td= comentario.comentario
         -event=Evento.find(Integer(comentario.evento))

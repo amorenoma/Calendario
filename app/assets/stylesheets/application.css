@@ -136,7 +136,7 @@ p.mes{
 	border-radius:15px 55px;
 }
 
-#registrarse, #logearse{
+#registrarse, #logearse, #nuevocomentario{
 	text-align:center;
 	width: 40%;
         font: 120% sans-serif bold; 
