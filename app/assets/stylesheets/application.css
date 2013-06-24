@@ -7,9 +7,6 @@
 */
 
 
-
-
-
 body{
 	background-color: #F0FFFF;
         width:1000px;
@@ -168,7 +165,7 @@ p.mes{
 .mostrarevento{
 	text-align:center;
 	padding-bottom:2%;
-	width: 57%; 
+	width: 59%; 
 	background-color: #99CC99;
 	border:2px solid;
 	border-color:#009966;
@@ -213,8 +210,7 @@ p.mes{
 	margin-top: 1%;
 	
 }
-.buttoninicio{
-	position:absolute;
-	right:94%;
-	top:125%;
+.fecha{
+	font-size:75%;
 }
+

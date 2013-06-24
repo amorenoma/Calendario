@@ -20,8 +20,8 @@
 	-@comentariosevento.each do |comentarioevento|
 		%tr 
 			%th= comentarioevento.usuario 
-			%p
 			%th.comentario= comentarioevento.comentario	
+			%th= comentarioevento.fecha
 
 
 -if session[:usuario]
@@ -30,24 +30,14 @@
 	-session[:idevento]=params[:id]
 	= form_tag  new_comentario_path, :method => :get do
 		= submit_tag 'Nuevo comentario', :class => "buttons"
-	-#=button_to 'Nuevo comentario', new_comentario_path, :class => "buttons"
 	-if session[:usuario].rol=="Profesor"
-		-#buttons
 		= form_tag  edit_evento_path, :method => :get do
 			= submit_tag 'Modificar', :class => "buttons"
-
-			-#= button_to 'Modificar', edit_evento_path(@evento), 
-		-#= link_to 'Eventos', eventos_path
 		= form_tag  eventos_path, :method => :get do
 			= submit_tag 'Eventos', :class => "buttons"
-
-			-#= button_to 'Eventos', eventos_path
-
 		= form_tag  comentarios_path, :method => :get do
 			= submit_tag 'Administrar comentarios', :class => "buttons"
-			-#= button_to 'Administrar comentarios', comentarios_path
-
-			= button_to "Borrar", evento_path(@evento),:method => :delete, :confirm => "¿Estas seguro?"
+		= button_to "Borrar", evento_path(@evento),:method => :delete, :confirm => "¿Estas seguro?"
 %p
 = form_tag  mes_path(@mes), :method => :get do
 	= submit_tag 'Calendario'
