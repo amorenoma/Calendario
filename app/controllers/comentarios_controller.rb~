@@ -14,7 +14,7 @@ class ComentariosController < ApplicationController
   end
 
   def index
-    @comentarios = Comentario.find(:all).sort_by {|evt| evt.fecha}
+    @comentarios = Comentario.find(:all)
   end
 
   def destroy

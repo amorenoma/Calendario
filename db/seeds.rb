@@ -36,10 +36,10 @@ usuarios = [
 ]
 
 comentarios = [
-  {:comentario => 'Este examen no lo aprueba ni dios1', :evento => '4' , :usuario => 'Pheras'},
-  {:comentario => 'Este examen no lo aprueba ni dios2', :evento => '4' , :usuario => 'Pheras'},
-  {:comentario => 'Este examen no lo aprueba ni dios3', :evento => '4' , :usuario => 'Pheras'},
-  {:comentario => 'Estais suspensos', :evento => '3' , :usuario => 'Pheras'}
+  {:comentario => 'Este examen no lo aprueba ni dios1', :evento => '4' , :usuario => 'Pheras', :fecha =>'28-May-2013 11:10:00'},
+  {:comentario => 'Este examen no lo aprueba ni dios2', :evento => '4' , :usuario => 'Pheras', :fecha =>'29-May-2013 10:40:00'},
+  {:comentario => 'Este examen no lo aprueba ni dios3', :evento => '4' , :usuario => 'Pheras', :fecha =>'30-May-2013 13:15:00'},
+  {:comentario => 'Estais suspensos', :evento => '3' , :usuario => 'Pheras', :fecha =>'15-May-2013 15:20:00'}
 ]
 
 Evento.send(:attr_accessible, :fecha, :asignatura, :tipo, :aula, :dificultad)
