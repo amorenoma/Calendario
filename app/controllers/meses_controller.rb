@@ -35,4 +35,16 @@ class MesesController < ApplicationController
     @listadias=listadias
   end
 
+  def ver_dia
+    @mes=Mes.find_by_id(params[:id])
+    nmes = @mes.nmes
+    eventos=Evento.all
+    @eventosdia=[]
+    eventos.each do |evento|
+      if evento.fecha.day.to_s == params[:dia] && evento.fecha.month.to_s == nmes
+        @eventosdia.push evento
+      end
+    end
+  end
+
 end
