@@ -6,10 +6,11 @@ end
 
 When /I (un)?check the following subjects: (.*)/ do |uncheck, subject_list|
   subject_list.split(", ").each do |subject| 
-    if uncheck
-      uncheck("ratings_#{rating}")
+		asignatura = "asignaturas_"+subject
+    if uncheck == "un"
+      uncheck(asignatura)
     else
-      check("ratings_#{rating}")
+      check(asignatura)
     end
   end
 end

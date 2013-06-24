@@ -10,27 +10,27 @@ Given the following Users exist
 
 Given the following Events exist
     | fecha | asignatura    | tipo   | aula   | dificultad |
-    | 30-Jun-2013 9:00:00 | ISI  | examen  | 323 | 3 |
+    | 30-Jun-2013 9:00:00 | ISI  | practica  | 323 | 3 |
     | 28-Jun-2013 9:00:00 | DAT  | examen  | 303 | 3 |
 
 Given the following Meses exist
-    | mes   | dias    | nmes |
-    | Junio | 30      | 6 |
+    | mes   | dias    | nmes | year |
+    | Junio | 30      | 6 | 2013 |
 
 Given the following Comments exist
     | comentario   | evento    | usuario |
     | Vais a catear | 1      | Pheras |
 
 Scenario: Users can filter subjects
-	Given I am on the homepage
+	Given I'm logged in as "Pheras", with key "1234"
+	And I am on the index page
 	Then I follow "Ver mes"
-	And I should see "Junio"
-  When I check the following subjects: ISI
-  When I uncheck the following subjects: DAT
+
+  When I check the following subjects: DAT
+  When I uncheck the following subjects: ISI
 	When I press "Refresh"
-  Then I am on the month page
-  Then I should see "ISI"
-  And I should not see "DAT"
+  Then I should see "examen"
+  And I should not see "practica"
 	
 
 
