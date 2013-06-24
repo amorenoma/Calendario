@@ -4,13 +4,13 @@ class ComentariosController < ApplicationController
 #    puts "???????????????????????????????????????????'"
 #    puts session[:idevento]
  #   @idevento=session[:idevento]
-    @idevento=session[:idevento]
+    @idevento=params[:format]
   end
 
   def create
-        params[:comentario][:fecha]=DateTime.now
+    params[:comentario][:fecha]=DateTime.now
   	Comentario.create!(params[:comentario])
-  	redirect_to evento_path(session[:evento])
+    redirect_to ver_dia_path(session[:mes],:dia=>session[:dia])
   end
 
   def index
