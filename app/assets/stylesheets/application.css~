@@ -14,6 +14,7 @@ body{
 	background-color: white;
         width:1000px;
         height:600px;
+	font: oblique bold italic;
 }
 
 h2{
@@ -45,7 +46,7 @@ h1.num{
 	margin-left:15%;
 	
 }
-img{
+#logo img{
 	width:40%;
 	height:25%;
 	position: absolute;
@@ -207,7 +208,7 @@ p.mes{
 
 #checkbox{
 	float:right;
-	margin-top:4%;
+	margin-top:3%;
 	margin-right:-10%;
 }	
 
