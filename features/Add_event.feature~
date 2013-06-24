@@ -17,7 +17,7 @@ Given the following Meses exist
 Scenario: Teacher adds event
   Given I'm logged in as "Pheras", with key "1234"
   And I am on the home page
-  When I follow "Administrar eventos"
+  When I press "Administrar eventos"
   And I follow "Crear evento"
   Then I should be on the new event page
   When I fill in "Asignatura" with "SAT"
@@ -25,4 +25,4 @@ Scenario: Teacher adds event
   And I fill in "Aula" with "302"
   And I select "2" from "Dificultad"
   And I press "Crear"
-  Then "El evento ha sido creado con exito"
+  Then I should see "El evento ha sido creado con exito"

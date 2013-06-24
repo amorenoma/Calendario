@@ -17,8 +17,8 @@ Given the following Meses exist
 Scenario: Teacher adds event
   Given I'm logged in as "Pheras", with key "1234"
   And I am on the home page
-  When I follow "Administrar eventos"
-  And I follow "Crear evento"
+  When I press "Administrar eventos"
+  And I press "Crear evento"
   Then I should be on the new event page
   When I fill in "Asignatura" with "SAT"
   And I select "Examen" from "Tipo"
