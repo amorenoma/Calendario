@@ -1,7 +1,7 @@
 = form_tag comentarios_path do
 	#nuevocomentario
 		%p= label :comentario, :comentario, "Comentario"
-		= text_field :comentario, "comentario"
+		= text_area :comentario, "comentario", :cols => "40", :rows => "10"
 
 		= hidden_field :comentario, :evento, :value => @idevento
 

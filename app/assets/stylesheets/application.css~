@@ -17,6 +17,9 @@ body{
 	font-family: sans-serif;
 }
 
+a {
+	color: #228B22;  
+}
 h2{
 	color:#009966;
 	position: relative;
@@ -214,4 +217,8 @@ p.mes{
 	position:absolute;
 	right:94%;
 	top:125%;
+}
+#comentario_comentario{
+	rows:10;
+	columns:20;
 }
