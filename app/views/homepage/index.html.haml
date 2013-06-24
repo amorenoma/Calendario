@@ -13,13 +13,13 @@
           = submit_tag 'Administrar comentarios'
 
 %h2 Curso 2012/2013
+#logo
+  %a{:href => "https://www.urjc.es/"}
+    %img= image_tag("urjc.gif")
 
-%a{:href => "https://www.urjc.es/"}
-  %img= image_tag("urjc.gif")
-#meses
-  - @meses.each do |mes|
-    %p.mes
-      = mes.mes
-      = link_to "Ver mes", mes_path(mes)
+= form_tag homepage_index_path do
+  = select :mes, :mes,["Septiembre","Octubre","Noviembre","Diciembre","Enero","Febrero","Marzo","Abril","Mayo","Junio"]
+  %p= submit_tag "ver mes"
+
 
 

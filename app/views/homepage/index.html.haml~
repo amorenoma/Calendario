@@ -1,6 +1,4 @@
-- if session[:usuario]
-  =link_to 'Cerrar sesion', '/logout'
-- else
+- if not session[:usuario]
   %registro=link_to 'Registro', '/new',:class => "link_registro"
   %acceder=link_to 'Acceder', '/login'
 
@@ -18,10 +16,9 @@
 
 %a{:href => "https://www.urjc.es/"}
   %img= image_tag("urjc.gif")
-#meses
-  - @meses.each do |mes|
-    %p.mes
-      = mes.mes
-      = link_to "Ver mes", mes_path(mes)
+= form_tag homepage_index_path do
+  = select :mes, :mes,["Septiembre","Octubre","Noviembre","Diciembre","Enero","Febrero","Marzo","Abril","Mayo","Junio"]
+  %p= submit_tag "ver mes"
+
 
 

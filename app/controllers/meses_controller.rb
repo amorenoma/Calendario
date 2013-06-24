@@ -61,4 +61,9 @@ class MesesController < ApplicationController
     puts "================"
   end
 
+  def select
+    mes = Mes.find_all_by_mes(params[:mes]["mes"])
+    redirect_to mes_path(mes)
+  end
+
 end
