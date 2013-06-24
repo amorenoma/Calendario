@@ -213,4 +213,11 @@ p.mes{
 .fecha{
 	font-size:75%;
 }
+<<<<<<< HEAD
 
+=======
+#comentario_comentario{
+	rows:10;
+	columns:20;
+}
+>>>>>>> 68f79c28c30c0fd85a0a2b6f73b7ff04b7d4860a
