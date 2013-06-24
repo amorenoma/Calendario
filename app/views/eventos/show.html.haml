@@ -28,11 +28,15 @@
 	-#por si se usa nuevo comentario:
 	-session[:evento]=@evento
 	-session[:idevento]=params[:id]
-	=button_to 'Nuevo comentario', new_comentario_path, :class => "buttons"
+	= form_tag  new_comentario_path, :method => :get do
+		= submit_tag 'Nuevo comentario', :class => "buttons"
 	-if session[:usuario].rol=="Profesor"
-		= button_to 'Modificar', edit_evento_path(@evento), :class => "buttons"
-		= button_to 'Eventos', eventos_path, :class => "buttons"
-		= button_to 'Administrar comentarios', comentarios_path, :class => "buttons"
+		= form_tag  edit_evento_path, :method => :get do
+			= submit_tag 'Modificar', :class => "buttons"
+		= form_tag  eventos_path, :method => :get do
+			= submit_tag 'Eventos', :class => "buttons"
+		= form_tag  comentarios_path, :method => :get do
+			= submit_tag 'Administrar comentarios', :class => "buttons"
 		= button_to "Borrar", evento_path(@evento),:method => :delete, :confirm => "¿Estas seguro?"
 %p
 = form_tag  mes_path(@mes), :method => :get do
