@@ -4,8 +4,8 @@
   #checkbox
     - @asignaturas.each do |asignatura|
       %p
-      = asignatura
       = check_box_tag "asignaturas[#{asignatura}]", 1, @selected_asignaturas.include?(asignatura), :id => "asignaturas_#{asignatura}"
+      = asignatura
     %p
     = submit_tag 'Refresh', :id => 'asignaturas_submit'
 #diassem
@@ -27,7 +27,4 @@
           %td= link_to "Ver mas", evento_path(evento)
   -else
     .cuadrovacio= " "
-%p    
-= form_tag homepage_index_path, :method => :get do
-  = submit_tag 'Inicio'
 

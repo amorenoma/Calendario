@@ -172,7 +172,8 @@ p.mes{
 }
 .mostrarevento{
 	text-align:center;
-	width: 40%;
+	padding-bottom:2%;
+	width: 57%;
         font: 120% sans-serif bold; 
 	background-color: #99CC99;
 	border:2px solid;
@@ -205,9 +206,10 @@ p.mes{
 }
 
 #checkbox{
-	position:absolute;
-	left: 80%;
-}
+	float:right;
+	margin-top:4%;
+	margin-right:-10%;
+}	
 
 .buttons{
 	float:left;
@@ -216,4 +218,9 @@ p.mes{
 .buttonborrar{
 	margin-top: 1%;
 	
+}
+.buttoninicio{
+	position:absolute;
+	right:94%;
+	top:125%;
 }
