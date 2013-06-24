@@ -203,3 +203,8 @@ p.mes{
 	left: 83%;
         top:-0.2%;
 }
+
+#checkbox{
+	position:absolute;
+	left: 80%;
+}

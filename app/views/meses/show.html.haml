@@ -1,10 +1,13 @@
 %h2= @mes.mes
 
 = form_tag mes_path, :method => :get, :id => @mes.nmes do
-  - @asignaturas.each do |asignatura|
-    = asignatura
-    = check_box_tag "asignaturas[#{asignatura}]", 1, @selected_asignaturas.include?(asignatura), :id => "asignaturas_#{asignatura}"
-  = submit_tag 'Refresh', :id => 'asignaturas_submit'
+  #checkbox
+    - @asignaturas.each do |asignatura|
+      %p
+      = check_box_tag "asignaturas[#{asignatura}]", 1, @selected_asignaturas.include?(asignatura), :id => "asignaturas_#{asignatura}"
+      = asignatura
+    %p
+    = submit_tag 'Refresh', :id => 'asignaturas_submit'
 #diassem
   .dia Lunes
   .dia Martes
