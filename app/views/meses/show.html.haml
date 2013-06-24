@@ -25,6 +25,7 @@
         -dia.each do |evento|
           %td=evento.asignatura
           %td=evento.tipo
+          %br
         %p= link_to 'Ver dia', ver_dia_path(params[:id],:dia=>currentday)
   -else
     .cuadrovacio= " "

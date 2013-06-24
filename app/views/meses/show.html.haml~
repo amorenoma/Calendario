@@ -17,14 +17,16 @@
   .dia Sabado
   .dia Domingo
 -@listadias.each_with_index do |dia, index|
+  -currentday=index+1-@nhuecos
   -if index>=@nhuecos
     .cuadro
-      %h1.num= index+1-@nhuecos
+      %h1.num= currentday
       -if not dia.empty?
         -dia.each do |evento|
           %td=evento.asignatura
           %td=evento.tipo
-          %td= link_to "Ver mas", evento_path(evento)
+          %p
+        %p= link_to 'Ver dia', ver_dia_path(params[:id],:dia=>currentday)
   -else
     .cuadrovacio= " "
 
