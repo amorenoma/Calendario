@@ -14,6 +14,7 @@ eventos = [
   {:fecha => '30-May-2013 9:00:00', :asignatura => 'RAD', :tipo => 'examen', :aula=> '313', :dificultad => '3'},
   {:fecha => '10-Jun-2013 09:00:00', :asignatura => 'BIO', :tipo => 'examen', :aula=> '302', :dificultad => '4'},
   {:fecha => '12-Jan-2013 12:00:00', :asignatura => 'PDAC', :tipo => 'examen', :aula=> '302', :dificultad => '5'},
+  {:fecha => '1-Jun-2013 15:00:00', :asignatura => 'BIO', :tipo => 'examen', :aula=> '302', :dificultad => '2'},
   {:fecha => '15-Dec-2012 15:00:00', :asignatura => 'CD', :tipo => 'practica', :aula=> '302', :dificultad => '2'}
 ]  
 
@@ -39,6 +40,7 @@ comentarios = [
   {:comentario => 'Este examen no lo aprueba ni dios1', :evento => '4' , :usuario => 'Pheras', :fecha =>'28-May-2013 11:10:00'},
   {:comentario => 'Este examen no lo aprueba ni dios2', :evento => '4' , :usuario => 'Pheras', :fecha =>'29-May-2013 10:40:00'},
   {:comentario => 'Este examen no lo aprueba ni dios3', :evento => '4' , :usuario => 'Pheras', :fecha =>'30-May-2013 13:15:00'},
+  {:comentario => 'Este examen no lo aprueba ni dios4', :evento => '8' , :usuario => 'Pheras', :fecha =>'28-May-2013 11:10:00'},
   {:comentario => 'Estais suspensos', :evento => '3' , :usuario => 'Pheras', :fecha =>'15-May-2013 15:20:00'}
 ]
 

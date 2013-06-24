@@ -20,8 +20,8 @@
 	-@comentariosevento.each do |comentarioevento|
 		%tr 
 			%th= comentarioevento.usuario 
-			%p
 			%th.comentario= comentarioevento.comentario	
+			%th= comentarioevento.fecha
 
 
 -if session[:usuario]

@@ -17,7 +17,13 @@
 			%th= evento.dificultad
 		%tr
 			%th.title Comentarios:
-
+			-@comentarioseventos.each do |comentariosevento|
+				-if comentariosevento[0]==evento.id
+					-for i in 1..comentariosevento.size-1
+						%tr
+							%th.comentario= comentariosevento[i].usuario
+							%th= comentariosevento[i].comentario
+							%th= comentariosevento[i].fecha
 
 	-if session[:usuario]
 		-#por si se usa nuevo comentario:

@@ -45,6 +45,20 @@ class MesesController < ApplicationController
         @eventosdia.push evento
       end
     end
+    comentarios = Comentario.all
+    @comentarioseventos=[]
+    for evento in @eventosdia
+      comentariosevento=[]
+      comentariosevento.push evento.id #en la primera posicion el id del evento
+      comentarios.each do |comentario|
+        if evento.id.to_s == comentario.evento
+          puts "HOLAAAAAAAAA"
+          comentariosevento.push comentario
+        end
+      end
+      @comentarioseventos.push comentariosevento
+    end
+    puts "================"
   end
 
 end
