@@ -11,12 +11,15 @@
 
 
 body{
-	background-color: white;
+	background-color: #F0FFFF;
         width:1000px;
         height:600px;
 	font-family: sans-serif;
 }
 
+a {
+	color: #228B22;  
+}
 h2{
 	color:#009966;
 	position: relative;

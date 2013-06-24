@@ -11,7 +11,7 @@
 
 
 body{
-	background-color: white;
+	background-color: #F0FFFF;
         width:1000px;
         height:600px;
 	font-family: sans-serif;
@@ -56,7 +56,7 @@ h1.num{
 
 img:hover{
   -webkit-transform:rotate(360deg);
-  -moz-transform:rotate(720deg);
+  -moz-transform:rotate(360deg);
   -o-transform:rotate(360deg);
   -ms-transform:rotate(360deg);
   transform:rotate(360deg);
