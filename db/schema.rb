@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(:version => 20130621181944) do
     t.string   "comentario"
     t.string   "evento"
     t.string   "usuario"
+    t.datetime "fecha"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
