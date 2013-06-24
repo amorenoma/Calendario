@@ -11,9 +11,9 @@ eventos = [
   {:fecha => '10-Jun-2013 12:00:00', :asignatura => 'TC', :tipo => 'examen', :aula=> '302', :dificultad => '4'},
   {:fecha => '12-Jun-2013 12:00:00', :asignatura => 'SAT', :tipo => 'examen', :aula=> '302', :dificultad => '4'},
   {:fecha => '1-Jun-2013 15:00:00', :asignatura => 'DAT', :tipo => 'examen', :aula=> '302', :dificultad => '2'},
-  :fecha => '30-May-2013 9:00:00', :asignatura => 'RAD', :tipo => 'examen', :aula=> '313', :dificultad => '3'},
+  {:fecha => '30-May-2013 9:00:00', :asignatura => 'RAD', :tipo => 'examen', :aula=> '313', :dificultad => '3'},
   {:fecha => '10-Jun-2013 09:00:00', :asignatura => 'BIO', :tipo => 'examen', :aula=> '302', :dificultad => '4'},
-  {:fecha => '12-Jan-2013 12:00:00', :asignatura => 'PDAC', :tipo => 'examen', :aula=> '302', :dificultad => '7'},
+  {:fecha => '12-Jan-2013 12:00:00', :asignatura => 'PDAC', :tipo => 'examen', :aula=> '302', :dificultad => '5'},
   {:fecha => '15-Dec-2012 15:00:00', :asignatura => 'CD', :tipo => 'practica', :aula=> '302', :dificultad => '2'}
 ]  
 

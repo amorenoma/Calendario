@@ -16,7 +16,8 @@
 
 %h2 Curso 2012/2013
 
-%img= image_tag("urjc.gif")
+%a{:href => "https://www.urjc.es/"}
+  %img= image_tag("urjc.gif")
 #meses
   - @meses.each do |mes|
     %p.mes

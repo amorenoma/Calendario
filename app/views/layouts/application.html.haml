@@ -12,5 +12,8 @@
     - elsif flash[:warning]
       #warning.message= flash[:warning]
     - if session[:usuario]
-      = "#{session[:usuario].nombre}"
+      #nombreuser
+        = "#{session[:usuario].nombre}"
+        %p
+        =link_to 'Cerrar sesion', '/logout'
     = yield

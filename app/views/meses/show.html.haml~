@@ -5,15 +5,26 @@
     = asignatura
     = check_box_tag "asignaturas[#{asignatura}]", 1, @selected_asignaturas.include?(asignatura), :id => "asignaturas_#{asignatura}"
   = submit_tag 'Refresh', :id => 'asignaturas_submit'
-
+#diassem
+  %th.dia Lunes
+  %th.dia Martes
+  %th.dia Miercoles
+  %th.dia Jueves
+  %th.dia Viernes
+  %th.dia Sabado
+  %th.dia Domingo
 -@listadias.each_with_index do |dia, index|
-  #num
-    -if index>=@nhuecos
+  -if index>=@nhuecos
+    .cuadro
       %h1.num= index+1-@nhuecos
       -if not dia.empty?
         -dia.each do |evento|
           %td=evento.asignatura
           %td=evento.tipo
           %td= link_to "Ver mas", evento_path(evento)
+  -else
+    .cuadrovacio= " "
+%p    
+= form_tag homepage_index_path, :method => :get do
+  = submit_tag 'Inicio'
 
-#aml= link_to "Atras", homepage_index_path

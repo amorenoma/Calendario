@@ -1,6 +1,4 @@
-- if session[:usuario]
-  =link_to 'Cerrar sesion', '/logout'
-- else
+- if not session[:usuario]
   %registro=link_to 'Registro', '/new',:class => "link_registro"
   %acceder=link_to 'Acceder', '/login'
 
