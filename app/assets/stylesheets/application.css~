@@ -14,14 +14,14 @@ body{
 	background-color: white;
         width:1000px;
         height:600px;
-	font: oblique bold italic;
+	font-family: sans-serif;
 }
 
 h2{
 	color:#009966;
 	position: relative;
 	left: 40%;
-	font: 250% sans-serif; 
+	font-size: 250%; 
 }
 .cuadro{
         width:13%;
@@ -56,7 +56,7 @@ h1.num{
 
 img:hover{
   -webkit-transform:rotate(360deg);
-  -moz-transform:rotate(360deg);
+  -moz-transform:rotate(720deg);
   -o-transform:rotate(360deg);
   -ms-transform:rotate(360deg);
   transform:rotate(360deg);
@@ -89,8 +89,6 @@ acceder{
 	
 	display:block;
         text-align:left;
-	font: 120% sans-serif bold;
-         
 }
 
 
@@ -101,7 +99,6 @@ acceder{
 #meses{
 	position: absolute;
 	left: 15%;
-        font: 120% sans-serif bold; 
 	background-color: #CCCCCC;
         border:2px solid;
 	border-color:black;
@@ -113,7 +110,6 @@ p.mes{
 }
 
 #warning{
-  font: 120% sans-serif bold;
   color: white;
   background: red;
   width: 130%;
@@ -121,7 +117,6 @@ p.mes{
 }	
 
 #notice {
-  font: 120% sans-serif bold;
   color: white;
   background: #41b3d9;
   width: 130%;
@@ -131,7 +126,6 @@ p.mes{
 #admin{
 	text-align:center;
 	width: 40%;
-        font: 120% sans-serif bold; 
 	background-color: #FFCC66;
 	border-radius:15px 55px;
 }
@@ -139,7 +133,6 @@ p.mes{
 #registrarse, #logearse, #nuevocomentario{
 	text-align:center;
 	width: 40%;
-        font: 120% sans-serif bold; 
 	background-color: #CCFFFF;
 	border:2px solid;
 	border-color:#009966;
@@ -151,7 +144,6 @@ p.mes{
 #admineventos, #admincomentarios{
 	text-align:center;
 	width: 70%;
-        font: 120% sans-serif bold; 
 	background-color: #FFCC66;
 	border:2px solid;
 	border-color:#FF9966;
@@ -163,7 +155,6 @@ p.mes{
 #nuevoevento, #editarevento{
 	text-align:center;
 	width: 40%;
-        font: 120% sans-serif bold; 
 	background-color: #FFCC66;
 	border:2px solid;
 	border-color:#FF9966;
@@ -174,8 +165,7 @@ p.mes{
 .mostrarevento{
 	text-align:center;
 	padding-bottom:2%;
-	width: 57%;
-        font: 120% sans-serif bold; 
+	width: 57%; 
 	background-color: #99CC99;
 	border:2px solid;
 	border-color:#009966;
