@@ -64,6 +64,9 @@ Calendario::Application.routes.draw do
   match '/new' => 'usuarios#new'
   match '/login' => 'usuarios#login'
   post '/usuarios/acceder'
+  scope :path => '/meses/:id', :as => 'ver_dia' do
+    match 'ver_dia/:dia' => 'meses#ver_dia'
+  end
 
 
   match '/logout' => 'usuarios#logout'
