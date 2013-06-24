@@ -22,18 +22,17 @@ h2{
 	left: 40%;
 	font: 250% sans-serif; 
 }
-#num{
-	
+.cuadro{
         width:13%;
 	height:20%;
         padding:0.1% 0.1% 0.1% 0.1%;
 	border:2px solid;
         margin:0.2%;
 	border-color:black;
-	float:left;
-	
-	
+	float:left;	
+	border-radius: 5px;
 }
+
 h1.num{
 	color:#009966;
         font-size:100%
@@ -180,4 +179,32 @@ p.mes{
 	border-color:#3333FF;
 	border-radius:15px 55px;
 	border-radius:15px 55px;
+}
+.cuadrovacio{
+	background-color: #99CC99;
+        width:13%;
+	height:20%;
+        padding:0.1% 0.1% 0.1% 0.1%;
+	border:2px solid;
+        margin:0.2%;
+	border-color:black;
+	float:left;
+        border-radius: 5px;
+
+}
+
+.dia{
+	padding: 3.7%;
+	display:inline;
+}
+
+#nombreuser{
+	position:absolute;
+	left: 83%;
+        top:-0.2%;
+}
+
+#checkbox{
+	position:absolute;
+	left: 80%;
 }
