@@ -174,9 +174,9 @@ p.mes{
 	text-align:center;
 	width: 40%;
         font: 120% sans-serif bold; 
-	background-color: #33CCFF;
+	background-color: #99CC99;
 	border:2px solid;
-	border-color:#3333FF;
+	border-color:#009966;
 	border-radius:15px 55px;
 	border-radius:15px 55px;
 }
@@ -207,4 +207,13 @@ p.mes{
 #checkbox{
 	position:absolute;
 	left: 80%;
+}
+
+.buttons{
+	float:left;
+}
+
+.buttonborrar{
+	margin-top: 1%;
+	
 }
