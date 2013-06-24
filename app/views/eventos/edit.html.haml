@@ -16,7 +16,3 @@
 		= select :evento, :dificultad, ["1", "2", "3", "4", "5"]
 
 		%p=submit_tag "Actualizar"
-
-%p
-= form_tag evento_path(@evento), :method => :get do
-	= submit_tag "Atras"
