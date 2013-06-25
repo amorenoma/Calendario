@@ -47,11 +47,11 @@ h1.num{
 	
 }
 #logo img{
-	width:40%;
-	
+	width:470.5px;
+        height:188.5px;
 	position: absolute;
 	left: 50%;
-	top:45%;
+	top:35%;
 }
 
 img:hover{
