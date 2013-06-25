@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(:version => 20130621181944) do
     t.string   "aula"
     t.string   "dificultad"
     t.string   "comentario"
+    t.string   "profesor"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

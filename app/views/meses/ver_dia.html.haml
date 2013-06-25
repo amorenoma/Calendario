@@ -33,7 +33,7 @@
 			= submit_tag 'Nuevo comentario', :class => "buttons"
 		-session[:comentario]=0#si es 0 viene de aqui, si es 1 viene de show evento
 		-#=link_to 'Nuevo comentario', new_comentario_path(evento)
-		-if session[:usuario].rol=="Profesor"
+		-if session[:usuario].rol=="Profesor" and evento.profesor==session[:usuario].nick
 			= form_tag  edit_evento_path(evento), :method => :get do
 				= submit_tag 'Modificar', :class => "buttons"
 			= button_to "Borrar", evento_path(evento), :method => :delete, :confirm => "¿Estas seguro?"

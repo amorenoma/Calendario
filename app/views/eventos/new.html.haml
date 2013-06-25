@@ -15,4 +15,7 @@
 		%p= label :evento, :dificultad, "Dificultad"
 		= select :evento, :dificultad, ["1", "2", "3", "4", "5"]
 
+		%p= label :evento, :profesor, "Profesor (nick)"
+		= text_field :evento, "profesor"
+
 		%p=submit_tag "Crear"
