@@ -15,6 +15,17 @@ class UsuariosController < ApplicationController
   def login
   end
 
+  def edit
+    @usuario = Usuario.find params[:id]
+  end
+
+  def update
+    @usuario = Usuario.find params[:id]
+    @usuario.update_attributes!(params[:usuario])
+    flash[:notice] = "La informacion de usuario ha sido actualizada con exito"
+    redirect_to usuario_path(@usuario)
+  end
+
   def acceder 
     @usuario= Usuario.find_by_nick(params[:usuario][:nick])
     if @usuario then

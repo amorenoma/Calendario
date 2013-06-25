@@ -13,5 +13,5 @@
 		%th.title Nick: 
 		%th= @usuario.nick
 
-
+= link_to "Modificar informacion", edit_usuario_path(session[:usuario])
 = button_to "Borrar usuario", usuario_path(@usuario),:method => :delete, :confirm => "¿Estas seguro?"
