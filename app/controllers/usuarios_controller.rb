@@ -6,15 +6,17 @@ class UsuariosController < ApplicationController
   end
 
   def create
-    if params[:usuario][:key] == params[:usuario][:key2]
+    puts "=================================="
+    puts Usuario.find_by_nick(params[:usuario][:nick])
+    if Usuario.find_by_nick(params[:usuario][:nick])
+      flash[:warning] = "Ese nick ya existe"
+      redirect_to new_usuario_path 
+    else
       @usuario = Usuario.create!(params[:usuario])
       session[:usuario]= @usuario
       flash[:notice] = "#{session[:usuario].nick} se ha registrado"
       redirect_to homepage_index_path
-    else
-      flash[:warning] = "Fallo al confirmar la clave"
-      redirect_to new_usuario_path
-    end     
+    end
   end
 
   def login

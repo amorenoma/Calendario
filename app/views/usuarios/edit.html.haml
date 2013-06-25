@@ -12,7 +12,13 @@
     %p= label :usuario, :nick, 'Nick'
     = text_field :usuario, 'nick'
 
-    %p= label :usuario, :key, 'Key'
-    = password_field :usuario, 'key'
+    %p= label :usuario, :oldkey, 'Key actual'
+    = password_field :usuario, 'key actual'
+
+    %p= label :usuario, :key, 'Key nueva'
+    = password_field :usuario, 'Key nueva'
+
+    %p= label :usuario, :key1, 'Confirmar key nueva'
+    = password_field :usuario, 'Confirmar key nueva'
   
     %p= submit_tag 'Actualizar'
