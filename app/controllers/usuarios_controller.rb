@@ -36,4 +36,12 @@ class UsuariosController < ApplicationController
     session.clear
     redirect_to homepage_index_path
   end
+
+  def destroy
+    @usuario = Usuario.find(params[:id])
+    @usuario.destroy
+    flash[:notice]= "Usuario borrado"
+    session.clear
+    redirect_to homepage_index_path
+  end
 end

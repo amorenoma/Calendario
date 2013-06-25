@@ -12,3 +12,6 @@
 	%tr
 		%th.title Nick: 
 		%th= @usuario.nick
+
+
+= button_to "Borrar usuario", usuario_path(@usuario),:method => :delete, :confirm => "¿Estas seguro?"
