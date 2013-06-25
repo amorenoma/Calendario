@@ -6,8 +6,6 @@ class UsuariosController < ApplicationController
   end
 
   def create
-    puts "=================================="
-    puts Usuario.find_by_nick(params[:usuario][:nick])
     if Usuario.find_by_nick(params[:usuario][:nick])
       flash[:warning] = "Ese nick ya existe"
       redirect_to new_usuario_path 
@@ -28,9 +26,15 @@ class UsuariosController < ApplicationController
 
   def update
     @usuario = Usuario.find params[:id]
-    @usuario.update_attributes!(params[:usuario])
-    flash[:notice] = "La informacion de usuario ha sido actualizada con exito"
-    redirect_to usuario_path(@usuario)
+    if Usuario.find_by_nick(params[:usuario][:nick]) && session[:usuario].nick != params[:usuario][:nick]
+      flash[:warning] = "Ese nick ya existe"
+      redirect_to edit_usuario_path(@usuario)
+    else
+      @usuario.update_attributes!(params[:usuario])
+      session[:usuario]= @usuario
+      flash[:notice] = "La informacion de usuario ha sido actualizada con exito"
+      redirect_to usuario_path(@usuario) 
+    end
   end
 
   def acceder 
