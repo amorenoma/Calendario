@@ -1,0 +1,20 @@
+%h1 Modificar datos de usuario
+
+= form_tag usuario_path(@usuario), :method => :put do
+  #registrarse
+    %p= label :usuario, :nombre, 'Nombre'
+    = text_field :usuario, 'nombre'
+  
+    %p= label :usuario, :email, 'Email'
+    = text_field :usuario, 'email'
+  
+    %p= label :usuario, :rol, 'Rol'
+    = text_field :usuario, 'rol'
+  
+    %p= label :usuario, :nick, 'Nick'
+    = text_field :usuario, 'nick'
+
+    %p= label :usuario, :key, 'Key'
+    = password_field :usuario, 'key'
+  
+    %p= submit_tag 'Actualizar'

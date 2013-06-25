@@ -2,6 +2,7 @@ class UsuariosController < ApplicationController
   def new
   end
   def show
+    @usuario = Usuario.find(params[:id])
   end
 
   def create
@@ -30,6 +31,7 @@ class UsuariosController < ApplicationController
        redirect_to login_path
      end
   end
+
   def logout
     session.clear
     redirect_to homepage_index_path
