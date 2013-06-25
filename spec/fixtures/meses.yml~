@@ -1,5 +1,5 @@
-prueba_comentario:
+prueba_mes:
   id: 1
-  comentario: 'probando comentarios'
-  evento: '1'
-  usuario: 'Pheras'
+  mes: 'Septiembre'
+  dias: 30
+  nmes: '9'

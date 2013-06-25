@@ -165,7 +165,7 @@ p.mes{
 .mostrarevento{
 	text-align:center;
 	padding-bottom:2%;
-	width: 57%; 
+	width: 59%; 
 	background-color: #99CC99;
 	border:2px solid;
 	border-color:#009966;
@@ -213,11 +213,4 @@ p.mes{
 .fecha{
 	font-size:75%;
 }
-<<<<<<< HEAD
 
-=======
-#comentario_comentario{
-	rows:10;
-	columns:20;
-}
->>>>>>> 68f79c28c30c0fd85a0a2b6f73b7ff04b7d4860a
