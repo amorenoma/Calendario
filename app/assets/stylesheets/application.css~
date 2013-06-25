@@ -48,10 +48,10 @@ h1.num{
 }
 #logo img{
 	width:40%;
-	height:25%;
+	
 	position: absolute;
 	left: 50%;
-	top:35%;
+	top:45%;
 }
 
 img:hover{
