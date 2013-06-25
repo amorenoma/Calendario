@@ -6,10 +6,15 @@ class UsuariosController < ApplicationController
   end
 
   def create
-    @usuario = Usuario.create!(params[:usuario])
-    session[:usuario]= @usuario
-    flash[:notice] = "#{session[:usuario].nick} se ha registrado"
-    redirect_to homepage_index_path
+    if params[:usuario][:key] == params[:usuario][:key2]
+      @usuario = Usuario.create!(params[:usuario])
+      session[:usuario]= @usuario
+      flash[:notice] = "#{session[:usuario].nick} se ha registrado"
+      redirect_to homepage_index_path
+    else
+      flash[:warning] = "Fallo al confirmar la clave"
+      redirect_to new_usuario_path
+    end     
   end
 
   def login
