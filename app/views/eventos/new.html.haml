@@ -4,7 +4,7 @@
 		= datetime_select :evento, "fecha", :start_year => 2012, :end_year => 2013
 
 		%p= label :evento, :asignatura, "Asignatura"
-		= text_field :evento, "asignatura"
+		= select :evento, "asignatura", ['ISI', 'TC', 'IST', 'SAT', 'DAT', 'BIO', 'PDAC', 'AC', 'SSOO', 'PST', 'Circuitos', 'Calculo', 'FDP', 'CC', 'IO']
 
 		%p= label :evento, :tipo, "Tipo"
 		= select :evento, :tipo, ["Practica", "Examen"]

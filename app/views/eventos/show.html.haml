@@ -31,8 +31,9 @@
 	= form_tag  new_comentario_path, :method => :get do
 		= submit_tag 'Nuevo comentario', :class => "buttons"
 	-if session[:usuario].rol=="Profesor"
-		= form_tag  edit_evento_path, :method => :get do
-			= submit_tag 'Modificar', :class => "buttons"
+		-if session[:usuario].nick == @evento.profesor
+			= form_tag  edit_evento_path, :method => :get do
+				= submit_tag 'Modificar', :class => "buttons"
 		= form_tag  eventos_path, :method => :get do
 			= submit_tag 'Eventos', :class => "buttons"
 		= form_tag  comentarios_path, :method => :get do

@@ -21,13 +21,13 @@
 		%tr 
 			%th= comentarioevento.usuario 
 			%th.comentario= comentarioevento.comentario	
-			%th= comentarioevento.fecha
+			%th.fecha= comentarioevento.fecha
 
 
 -if session[:usuario]
 	-#por si se usa nuevo comentario:
 	-session[:evento]=@evento
-	-session[:idevento]=params[:id]
+	-session[:comentario]=1#si es 1 viene de aqui, si es 0 viene de ver_dia
 	= form_tag  new_comentario_path, :method => :get do
 		= submit_tag 'Nuevo comentario', :class => "buttons"
 	-if session[:usuario].rol=="Profesor"
