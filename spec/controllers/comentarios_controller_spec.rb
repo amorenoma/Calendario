@@ -1,18 +1,7 @@
 require 'spec_helper'
 
 describe ComentariosController do
-
   describe 'acciones basicas de comentarios' do
-    fixtures :comentarios
-    it 'crear un nuevo comentario' do
-      evt = mock('evt1', :fecha => '30-Jun-2013 9:00:00', :asignatura => 'IST', :tipo => 'examen', :aula => '313', :dificultad => '3')
-      cmt = comentarios(:prueba_comentario)
-      #cmt = mock('cmt1', :comentario => 'comentario de prueba', :evento => '1' , :usuario => 'Pheras', :fecha => '28-May-2013 11:10:00')
-      session[:evento] = '1'
-      #session[:comentario] = 0
-      Comentario.should_receive(:create!).and_return(cmt)
-      post :create, {:comentario => cmt}
-    end
     it 'borrar un comentario' do
       cmt = mock('cmt1', :comentario => 'comentario de prueba', :evento => '1' , :usuario => 'Pheras')
       Comentario.should_receive(:find).with('1').and_return(cmt)
