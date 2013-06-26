@@ -12,6 +12,8 @@ body{
         width:1000px;
         height:600px;
 	font-family: sans-serif;
+	margin-left:5%;
+	margin-right:-10%;
 }
 
 a {
@@ -20,8 +22,9 @@ a {
 h2{
 	color:#009966;
 	position: relative;
-	left: 40%;
-	font-size: 250%; 
+	width:460px;
+	left: 30%;
+	font-size: 300%; 
 }
 .cuadro{
         width:13%;
@@ -48,13 +51,15 @@ h1.num{
 	
 }
 #logo img{
-	width:470.5px;
-        height:188.5px;
+	width:235.25px;
+        height:94.25px;
 	position: absolute;
-	left: 50%;
-	top:40%;
+	left: 40%;
+	top:52%;
 }
-
+#vistabotones{
+	margin-left:50%;
+}
 img:hover{
   -webkit-transform:rotate(360deg);
   -moz-transform:rotate(360deg);
@@ -120,12 +125,13 @@ p.mes{
 #notice {
   color: white;
   background: #41b3d9;
-  width: 130%;
+  width: 110%;
   padding: 0.4%;
 }	
 
 #admin{
 	text-align:center;
+        margin-left:33%;
 	width: 40%;
 	background-color: #FFCC66;
 	border-radius:15px 55px;

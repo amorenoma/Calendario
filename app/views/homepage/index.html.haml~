@@ -1,24 +1,31 @@
 - if not session[:usuario]
   %registro=link_to 'Registro', '/new',:class => "link_registro"
   %acceder=link_to 'Acceder', '/login'
-
-#admin
-  -if session[:usuario]
-    -if session[:usuario].rol=="Profesor"
+%h2 Curso 2012/2013
+-if session[:usuario]
+  -if session[:usuario].rol=="Profesor"
+    #admin
       %p
         = form_tag  eventos_path, :method => :get do
           = submit_tag 'Administrar eventos'
-      %p
         = form_tag  comentarios_path, :method => :get do
           = submit_tag 'Administrar comentarios'
-
-%h2 Curso 2012/2013
-
-%a{:href => "https://www.urjc.es/"}
-  %img= image_tag("urjc.gif")
-= form_tag homepage_index_path do
-  = select :mes, :mes,["Septiembre","Octubre","Noviembre","Diciembre","Enero","Febrero","Marzo","Abril","Mayo","Junio"]
-  %p= submit_tag "ver mes"
-
+      %p
+        = form_tag homepage_index_path do
+          = select :mes, :mes,						     ["Septiembre","Octubre","Noviembre","Diciembre","Enero","Febrero","Marzo","Abril","Mayo","Junio"]
+          = submit_tag "ver mes"
+  -else
+    = form_tag homepage_index_path do
+      = select :mes, :mes,["Septiembre","Octubre","Noviembre","Diciembre","Enero","Febrero","Marzo","Abril","Mayo","Junio"]
+      %p= submit_tag "ver mes"
+  
+-else
+  #vistabotones
+    = form_tag homepage_index_path do
+      = select :mes, :mes,["Septiembre","Octubre","Noviembre","Diciembre","Enero","Febrero","Marzo","Abril","Mayo","Junio"]
+      %p= submit_tag "ver mes"
+#logo
+  %a{:href => "https://www.urjc.es/"}
+    %img= image_tag("urjc.gif")
 
 
