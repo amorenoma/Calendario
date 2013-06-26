@@ -237,7 +237,7 @@ p.mes{
 	background-color: #FF0000;
 }
 #ayuda{
-	margin-left:85%;
+	margin-left:95%;
 	margin-top:25%;
 	color: #009966;
 }
@@ -245,7 +245,7 @@ p.mes{
 	padding: 2ex;
 	position: absolute;
 	border: 2px double grey;
-	background: wheat;
+	background: #FFCC66;
 	top:30%;
 	left:10%;
 	right:10%;
