@@ -23,10 +23,34 @@
       %h1.num= currentday
       -if not dia.empty?
         -dia.each do |evento|
-          %td=evento.asignatura
-          %td=evento.tipo
-          %p
-        %p= link_to 'Ver dia', ver_dia_path(params[:id],:dia=>currentday)
+          -dif=evento.dificultad.to_s
+          %th=dif
+          -if dif=="1"
+            .dif1
+              %td=evento.asignatura
+              %td=evento.tipo
+              %br
+          -elsif dif=="2"
+            .dif2
+              %td=evento.asignatura
+              %td=evento.tipo
+              %br
+          -elsif dif=="3"
+            .dif3
+              %td=evento.asignatura
+              %td=evento.tipo
+              %br
+          -elsif dif=="4"
+            .dif4
+              %td=evento.asignatura
+              %td=evento.tipo
+              %br
+          -elsif dif=="5"
+            .dif5
+              %td=evento.asignatura
+              %td=evento.tipo
+              %br
+      %p= link_to 'Ver dia', ver_dia_path(params[:id],:dia=>currentday)
   -else
     .cuadrovacio= " "
 

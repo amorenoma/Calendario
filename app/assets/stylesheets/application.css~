@@ -51,7 +51,7 @@ h1.num{
         height:188.5px;
 	position: absolute;
 	left: 50%;
-	top:35%;
+	top:40%;
 }
 
 img:hover{
@@ -212,5 +212,20 @@ p.mes{
 }
 .fecha{
 	font-size:75%;
+}
+.dif1{
+	background-color: #00FF00;
+}
+.dif2{
+	background-color: #CCFF33;
+}
+.dif3{
+	background-color: #FFCC00;
+}
+.dif4{
+	background-color: red;
+}
+.dif5{
+	background-color: red;
 }
 

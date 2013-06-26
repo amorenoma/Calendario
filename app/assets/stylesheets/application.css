@@ -213,4 +213,19 @@ p.mes{
 .fecha{
 	font-size:75%;
 }
+.dif1{
+	background-color: #00FF00;
+}
+.dif2{
+	background-color: #CCFF33;
+}
+.dif3{
+	background-color: #FFCC00;
+}
+.dif4{
+	background-color: #FF6600;
+}
+.dif5{
+	background-color: #FF0000;
+}
 
