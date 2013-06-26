@@ -30,6 +30,6 @@
     %img= image_tag("urjc.gif")
 
 #ayuda
-  ¿Necesitas información? Pincha aquí
+  %a¿Necesitas información? Pincha #aqui aquí
 
 

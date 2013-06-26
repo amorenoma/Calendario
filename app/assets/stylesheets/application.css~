@@ -236,4 +236,19 @@ p.mes{
 .dif5{
 	background-color: #FF0000;
 }
+#ayuda{
+	margin-left:85%;
+	margin-top:25%;
+	color: #009966;
+}
+#popupayuda{
+	padding: 2ex;
+	position: absolute;
+	border: 2px double grey;
+	background: wheat;
+	top:48%;
+	left:10%;
+	right:10%;
+	
+}
 
