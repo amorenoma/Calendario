@@ -32,6 +32,7 @@ h2{
 	border-color:black;
 	float:left;	
 	border-radius: 5px;
+	overflow: hidden;
 }
 
 h1.num{
@@ -223,9 +224,9 @@ p.mes{
 	background-color: #FFCC00;
 }
 .dif4{
-	background-color: red;
+	background-color: #FF6600;
 }
 .dif5{
-	background-color: red;
+	background-color: #FF0000;
 }
 
