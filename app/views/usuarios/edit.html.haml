@@ -7,7 +7,7 @@
     = text_field :usuario, 'email'
   
     %p= label :usuario, :rol, 'Rol'
-    = text_field :usuario, 'rol'
+    = select :usuario, 'rol', ['Alumno', 'Profesor']
   
     %p= label :usuario, :nick, 'Nick'
     = text_field :usuario, 'nick'

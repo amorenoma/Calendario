@@ -1,6 +1,4 @@
-%h1 Registro
-
-= form_tag usuarios_path do
+= form_tag usuario_path(@usuario), :method => :put do
   #registrarse
     %p= label :usuario, :nombre, 'Nombre'
     = text_field :usuario, 'nombre'
@@ -9,16 +7,12 @@
     = text_field :usuario, 'email'
   
     %p= label :usuario, :rol, 'Rol'
-    = select :usuario, 'rol', ['Alumno', 'Profesor']
+    = text_field :usuario, 'rol'
   
     %p= label :usuario, :nick, 'Nick'
     = text_field :usuario, 'nick'
 
-    %p= label :usuario, :key, 'Key'
+    %p= label :usuario, :oldkey, 'Key'
     = password_field :usuario, 'key'
   
-    %p= submit_tag 'Registro'
-    
-%p
-= form_tag homepage_index_path, :method => :get do
-  = submit_tag 'Cancelar'
+    %p= submit_tag 'Actualizar'
