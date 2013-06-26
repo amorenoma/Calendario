@@ -20,7 +20,7 @@ Scenario: Teacher adds event
   When I press "Administrar eventos"
   And I press "Crear evento"
   Then I should be on the new event page
-  When I fill in "Asignatura" with "SAT"
+  When I select "SAT" from "Asignatura"
   And I select "Examen" from "Tipo"
   And I fill in "Aula" with "302"
   And I select "2" from "Dificultad"
