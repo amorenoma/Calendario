@@ -24,7 +24,6 @@
 							%th.comentario= comentariosevento[i].usuario
 							%th= comentariosevento[i].comentario
 							%th.fecha= comentariosevento[i].fecha
-
 	-if session[:usuario]
 		-#por si se usa nuevo comentario:
 		-session[:mes]=params[:id]
@@ -32,11 +31,11 @@
 		= form_tag  new_comentario_path(evento), :method => :get do
 			= submit_tag 'Nuevo comentario', :class => "buttons"
 		-session[:comentario]=0#si es 0 viene de aqui, si es 1 viene de show evento
-		-#=link_to 'Nuevo comentario', new_comentario_path(evento)
-		-if session[:usuario].rol=="Profesor"
+		-if session[:usuario].rol=="Profesor" and evento.profesor==session[:usuario].nick
 			= form_tag  edit_evento_path(evento), :method => :get do
 				= submit_tag 'Modificar', :class => "buttons"
 			= button_to "Borrar", evento_path(evento), :method => :delete, :confirm => "¿Estas seguro?"
+		%br
 
 -if session[:usuario]
 	-if session[:usuario].rol=="Profesor"
