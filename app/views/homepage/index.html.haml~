@@ -1,5 +1,3 @@
-= javascript_include_tag 'application'
-
 - if not session[:usuario]
   %registro=link_to 'Registro', '/new',:class => "link_registro"
   %acceder=link_to 'Acceder', '/login'
@@ -30,5 +28,8 @@
 #logo
   %a{:href => "https://www.urjc.es/"}
     %img= image_tag("urjc.gif")
+
+#ayuda
+  "Necesitas ayuda? Pincha aquí"
 
 

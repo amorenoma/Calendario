@@ -1,0 +1,15 @@
+popupayuda= {
+  texto="awefawef";
+  setup: function() {
+    // add invisible 'div' to end of page:
+    $('<div id="popupayuda"></div>').
+    hide().
+    appendTo($('body'));
+    $('#ayuda').click(function(){
+      $('#popupayuda').html(texto).show();			
+    });   
+  },
+
+
+}
+$(popupayuda.setup);

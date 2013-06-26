@@ -237,3 +237,10 @@ p.mes{
 	background-color: #FF0000;
 }
 
+#popupayuda{
+	padding: 2ex;
+	position: absolute;
+	border: 2px double grey;
+	background: wheat;
+}
+
