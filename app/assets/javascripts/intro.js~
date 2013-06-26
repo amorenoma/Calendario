@@ -1,0 +1,7 @@
+introanimacion= {
+  setup: function() {
+    //$('body').hide();
+    $('body').animate();
+  },
+}
+$(introanimacion.setup);

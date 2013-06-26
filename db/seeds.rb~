@@ -15,7 +15,11 @@ eventos = [
   {:fecha => '10-Jun-2013 09:00:00', :asignatura => 'BIO', :tipo => 'examen', :aula=> '302', :dificultad => '4', :profesor => 'Jcenteno'},
   {:fecha => '12-Jan-2013 12:00:00', :asignatura => 'PDAC', :tipo => 'examen', :aula=> '302', :dificultad => '5', :profesor => 'Jcenteno'},
   {:fecha => '1-Jun-2013 15:00:00', :asignatura => 'BIO', :tipo => 'examen', :aula=> '302', :dificultad => '2', :profesor => 'Jcenteno'},
-  {:fecha => '15-Dec-2012 15:00:00', :asignatura => 'CD', :tipo => 'practica', :aula=> '302', :dificultad => '2', :profesor => 'Jcenteno'}
+  {:fecha => '28-Jun-2013 15:00:00', :asignatura => 'CD', :tipo => 'practica', :aula=> '302', :dificultad => '1', :profesor => 'Jcenteno'},
+  {:fecha => '28-Jun-2013 15:00:00', :asignatura => 'DAT', :tipo => 'examen', :aula=> '302', :dificultad => '2', :profesor => 'Pheras'},
+  {:fecha => '28-Jun-2013 9:00:00', :asignatura => 'RAD', :tipo => 'examen', :aula=> '313', :dificultad => '3', :profesor => 'Pheras'},
+  {:fecha => '28-Jun-2013 09:00:00', :asignatura => 'BIO', :tipo => 'examen', :aula=> '302', :dificultad => '4', :profesor => 'Jcenteno'},
+  {:fecha => '28-Jun-2013 12:00:00', :asignatura => 'PDAC', :tipo => 'examen', :aula=> '302', :dificultad => '5', :profesor => 'Jcenteno'}
 ]  
 
 meses = [
@@ -33,7 +37,7 @@ meses = [
 
 usuarios = [
   {:nombre => 'Alexander Moreno', :email => 'alejandro@gmail.com' , :rol => 'Alumno' , :key => 'aaa', :nick => 'Flexo'},
-  {:nombre => 'Pedro De las Heras', :email => 'pheras@gmail.com' , :rol => 'Profesor' , :key => '1234', :nick => 'Pheras'}
+  {:nombre => 'Pedro De las Heras', :email => 'pheras@gmail.com' , :rol => 'Profesor' , :key => '1234', :nick => 'Pheras'},
   {:nombre => 'Jose Centeno', :email => 'jcenteno@gmail.com' , :rol => 'Profesor' , :key => '1234', :nick => 'Jcenteno'}
 ]
 

@@ -8,6 +8,7 @@
       = asignatura
     %p
     = submit_tag 'Refresh', :id => 'asignaturas_submit'
+
 #diassem
   .dia Lunes
   .dia Martes
@@ -24,7 +25,6 @@
       -if not dia.empty?
         -dia.each do |evento|
           -dif=evento.dificultad.to_s
-          %th=dif
           -if dif=="1"
             .dif1
               %td=evento.asignatura
@@ -53,4 +53,16 @@
       %p= link_to 'Ver dia', ver_dia_path(params[:id],:dia=>currentday)
   -else
     .cuadrovacio= " "
+%br
+%br
+%br
+%br
+%br
+%br
+%br
+%br
+%br
+%br
+%br
+%br
 
