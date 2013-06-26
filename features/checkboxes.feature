@@ -23,9 +23,7 @@ Given the following Comments exist
 
 Scenario: Users can filter subjects
 	Given I'm logged in as "Pheras", with key "1234"
-	And I am on the index page
-	Then I follow "Ver mes"
-
+	And I am on the month page
   When I check the following subjects: DAT
   When I uncheck the following subjects: ISI
 	When I press "Refresh"

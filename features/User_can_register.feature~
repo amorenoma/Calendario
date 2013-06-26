@@ -8,7 +8,7 @@ Scenario: register
   Then I should be on the Register page
   When I fill in "Nombre" with "Rodri"
   And I fill in "Email" with "Rodri@gmail.com"
-  And I select "Alumno" from "Rol"
+  And I fill in "Rol" with "Alumno"
   And I fill in "Nick" with "Rcm"
   And I fill in "Key" with "1234"
   And I press "Registro"
