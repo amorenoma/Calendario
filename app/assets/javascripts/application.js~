@@ -7,4 +7,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
-alert("hola mundo")
+//alert("hola mundo");
+introanimacion= {
+  setup: function() {
+    $('body').hide();
+    $('body').show('fast');
+  },
+}
+$(introanimacion.setup);
+
+

@@ -1,3 +1,5 @@
+= javascript_include_tag 'application'
+
 - if not session[:usuario]
   %registro=link_to 'Registro', '/new',:class => "link_registro"
   %acceder=link_to 'Acceder', '/login'
@@ -15,9 +17,10 @@
           = select :mes, :mes,						     ["Septiembre","Octubre","Noviembre","Diciembre","Enero","Febrero","Marzo","Abril","Mayo","Junio"]
           = submit_tag "ver mes"
   -else
-    = form_tag homepage_index_path do
-      = select :mes, :mes,["Septiembre","Octubre","Noviembre","Diciembre","Enero","Febrero","Marzo","Abril","Mayo","Junio"]
-      %p= submit_tag "ver mes"
+    #vistabotones
+      = form_tag homepage_index_path do
+        = select :mes, :mes,["Septiembre","Octubre","Noviembre","Diciembre","Enero","Febrero","Marzo","Abril","Mayo","Junio"]
+        %p= submit_tag "ver mes"
   
 -else
   #vistabotones

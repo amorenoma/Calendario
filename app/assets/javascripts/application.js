@@ -7,4 +7,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
-alert("hola mundo");
+//alert("hola mundo");
+
+
+
