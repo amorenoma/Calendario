@@ -34,11 +34,12 @@
 		-if session[:usuario].nick == @evento.profesor
 			= form_tag  edit_evento_path, :method => :get do
 				= submit_tag 'Modificar', :class => "buttons"
+			= button_to "Borrar", evento_path(@evento),:method => :delete, :confirm => "¿Estas seguro?"
 		= form_tag  eventos_path, :method => :get do
 			= submit_tag 'Eventos', :class => "buttons"
 		= form_tag  comentarios_path, :method => :get do
 			= submit_tag 'Administrar comentarios', :class => "buttons"
-		= button_to "Borrar", evento_path(@evento),:method => :delete, :confirm => "¿Estas seguro?"
 %p
+%br
 = form_tag  mes_path(@mes), :method => :get do
 	= submit_tag 'Calendario'
